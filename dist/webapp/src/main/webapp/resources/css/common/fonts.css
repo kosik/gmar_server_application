@@ -1,0 +1,379 @@
+/* 
+    Created on : Oct 11, 2014, 2:42:44 PM
+    Author     : oDrive Team
+*/
+
+/*COMMON TEXT CLASS ************************************/
+padding1{
+    padding-left: 1%;
+}
+padding2{
+    padding-left: 2%;
+}
+div ul li{
+    display: list-item;
+}
+div ul {
+    display: list-item;
+}
+ul {
+    list-style-type: square !important;;
+    width: 80%;
+    display: list-item;
+    list-style-position: outside !important; 
+    /*list-style-image: url('sqpurple.gif');*/
+    /*list-style: square url("sqpurple.gif");*/
+    /*display: list-item;*/
+}
+li {
+    display: list-item;
+    font-weight: normal !important;
+    font-size: 16px !important;
+    margin-left: 20px !important; 
+    list-style: disc !important;
+}
+
+
+p{
+    font-weight: bold;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    line-height: 1.21;
+    color: black;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    margin-right: 15px;
+    margin-top: 0;
+    /*max-height: 110px;*/
+    overflow: hidden;
+    /*padding-top: 0;*/
+    /*text-overflow: ellipsis;*/
+    width: 85%;
+    /*word-break: break-all;*/
+    word-spacing: 5px;
+}
+div{
+    font-weight: bold;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+h2{
+    /*color: black;*/
+    font-size: 1.21em;
+    text-transform: uppercase;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    
+    color: #1f7cff;
+    margin-top: 8px;
+    padding-top: 0;
+    text-align: center;
+    width: 100%;
+}
+h3{
+    border: 0 none;
+    font-size: 1.05em;
+    margin: 10px 0 15px;
+    /*padding-top: 30px;*/
+    word-spacing: 5px;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+}
+h4{
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+h6{
+    color: black;
+    font-size: 0.6em;
+    font-family: Arial;
+    margin-bottom: 0px;
+}
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.commonText{
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+.selection {
+    font-weight: normal;
+    color: black;
+    word-spacing: 0px;
+    font-size: 0.90em;
+}
+.commentaryText{
+    color: black;
+}
+.labelStyle_11 {
+    font-size: 11px;
+    color: black;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_13 {
+    font-size: 13px;
+    color: black;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_13_bold {
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.label100_white_bold {
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.label15_white_bold {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_13_white {
+    /*font-size: 13px;*/
+    font-size: 0.75em;
+    color: white;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_15_red {
+    font-size: 15px;
+    color: #ab310c;
+    font-weight: bold;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_15_white {
+    font-size: 15px;
+    color: white;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_16_black{
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_17_black {
+    font-size: 17px;
+    color: black;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_17_blackBold {
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.labelStyle_18_white {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+
+/*38565c*/
+.headerTextBold_15 {
+    color: #c2c9d3;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 15px;
+    font-weight: bold;
+}
+.headerTextBold_0_7 {
+    color: #c2c9d3;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.headerTextBold_16_d3d8db {
+/*    color: #d3d8db;*/
+    color: #a6aeb1;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 16px;
+    font-weight: bold;
+}
+.headerTextBold_13_d3d8db {
+    color: #a6aeb1;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 13px;
+    font-weight: bold;
+}
+.headerTextBold_13_white {
+    color: white;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 15px;
+    font-weight: bold;
+}
+.headerTextBold_20 {
+    color: #c2c9d3;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 20px;
+    font-weight: bold;
+}
+.headerTextBold_18_black {
+    color: black;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 18px;
+    font-weight: bold;
+}
+.headerTextBold_18_96979b {
+    color: 96979b;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 18px;
+    font-weight: bold;
+}
+.headerTextBold_17_white {
+    color: #96979b;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 17px;
+    font-weight: bold;
+}
+.headerTextBold_15_white_bold {
+    color: white;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 15px;
+    font-weight: bold;
+}
+.headerTextBold_15_white {
+    color: white;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 15px;
+    font-weight: normal;
+}
+.headerTextBold_20_black {
+    color: black;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 20px;
+    font-weight: bold;
+}
+.headerTextBold_21 {
+    color: #00186a;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 21px;
+    font-weight: bold;
+}
+.rubricsSmallUppercase {
+    color: #99a3af;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rubrics_15_white{
+    color: white;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rubrics_21_white{
+    color: white;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rubrics_16_white{
+    color: white;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rubrics_15_black{
+    color: black;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rubricsSmall {
+    color: #99a3af;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 7px;
+    font-weight: bold;
+}
+.commonTextWhite {
+    color: white;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 11px;
+}
+.commonTextBlack {
+    color: black;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 11px;
+}
+
+/*******************************************************/
+.aboutUsText{
+    color: #e21e25;
+    border: 0 none;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 2.1em;
+    margin-bottom: 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+}
+.landingH2{
+/*    color: #393939;*/
+    color: whitesmoke;
+    font-size: 2.1em;
+    margin-top: 0;
+    /*text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);*/
+    /*text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);*/
+}
+.landingH1{
+    border: 0 none;
+    color: white;
+    font-size: 4.2em;
+    margin-bottom: 0;
+    text-shadow: 7px 6px 5px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.landingH3{
+    color: #393939;
+    font-size: 1.35em;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    /*font-family: "BebasRegular";*/
+    font-family: Verdana,Arial,Helvetica,Geneva;
+}
+.landingH4 {
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 24px;
+}
+
+.articleOverview {
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 24px;
+    margin-left: -23px;
+}
+
+
+/*FONTS  *********************************************/
+.rubric_white1_29{
+    color: white;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 1.29em;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+.label_black1_25 {
+    font-size: 1.25em;
+    color: black;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.cWhite{
+    color: white;
+}

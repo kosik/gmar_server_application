@@ -1,0 +1,50 @@
+/* 
+    Created on : Apr 2, 2015, 8:23:47 PM
+    Author     : oDrive Team
+*/
+#userRoutesPaggination{
+    width: 100%;
+    position: relative;
+    min-height: 36px;
+}
+.currentPage{
+    min-height: 26px;
+    color: black !important;
+    float: right;
+    min-width: 170px;
+}
+.totalPages{
+    min-height: 35px;
+    color: black !important;
+    float: right;
+    padding-right: 50px;
+}
+.prevBtn:disabled{
+    background-color: graytext;
+}
+.prevBtn:hover{
+    color: black;
+    cursor: pointer;
+}
+.prevBtn {
+    float: right;
+    width: 130px;
+    min-width: 100px;
+    background-color: #36aa47;
+    min-height: 35px; 
+}
+.nextBtn:disabled{
+    background-color: graytext;
+}
+.nextBtn:hover{
+    color: black;
+    cursor: pointer;
+}
+.nextBtn{
+    float: right;
+    margin: 0 auto;
+    width: 130px;
+    min-width: 100px;
+    background-color: #169ef4;
+    min-height: 35px;
+}

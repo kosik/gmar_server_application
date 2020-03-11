@@ -1,0 +1,16 @@
+.vitalItem{
+}
+.squrrelAssets{
+    height: 55%;
+}
+.vitalSubmitBtn{
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.vitalInfoBlock{
+    background-color: #f0f1f3 !important;
+    overflow-x: hidden;
+    height: 190px;
+}

@@ -1,0 +1,158 @@
+/********************************************************************** FOOTER*/
+.footerTextAssets{
+    line-height: 0px !important;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+.footerTop{
+    padding-bottom: 3px;
+}
+.footerImgAssets{
+    margin-top: 0px;
+}
+#footerContent{
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+/****************************************************************** FOOTER END*/
+.radioStartDateAssets{
+}
+#slide1{
+    /*display: none;*/
+}
+#slide2{
+    display: none;
+}
+#slide3{
+    display: none;
+}
+#slide4{
+    display: none;
+}
+#slide5{
+    display: none;
+}
+#loginPopupBtn{
+    cursor: pointer;
+}
+.landingLoginImgAssets{
+    vertical-align: top;
+}
+.landingSocialBtnLabelAsset{
+    top:-50%;
+    position: absolute;
+    padding-left: 7px;
+}
+.loginPopupSocialAssets{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.popupHalfAssets{
+    width:48%;
+}
+.landingMenuAssets{
+    padding-right: 0%;
+    float: none !important;
+}
+.loginPassAssets{
+    margin-bottom: 25px;
+}
+#loginPass{
+    border: 1px solid #1bbc9b;
+    font-size: 1.2em;
+    background: white url(../../img-res/ico/indexUserPass.png) right no-repeat;
+}
+#loginUserMail{
+    border: 1px solid #1bbc9b;
+    font-size: 1.2em;
+    background: white url(../../img-res/ico/indexUserIco.png) right no-repeat;
+}
+#loginPopupContent{
+    display: none;
+    min-width: 275px;
+    max-width: 275px;
+}
+.landingHeaderTextAssets:active{
+    color: #60cae8;
+}
+.landingHeaderTextAssets{
+    padding-left: 4px;
+    padding-right: 5px;
+    height: 60px;
+    vertical-align: middle;
+    display: table-cell;
+    cursor: pointer;
+    line-height: 3.7;
+}
+.landingHeaderText {
+    color: #4c4c4c;
+    font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+    font-size: 0.90em;
+    text-transform: uppercase;
+}
+#facebookLoginRegSmall{
+    float: left;
+    display: inline-block;
+    padding-right: 3px;
+    cursor: pointer;
+    position: relative;
+}
+#googleLoginRegSmall{
+    display: inline-block;
+    padding-right: 3px;
+    cursor: pointer;
+    position: relative;
+}
+#signInHeader {
+    min-width: 770px;
+    width: 100%;
+    background: white;
+    border-top: 4px solid #4f4f4f;
+    max-height: 9%;
+    min-height: 61px;
+    position: fixed;
+    top:0px;
+    z-index: 300;
+}
+.landingLogoAssets{
+    padding-left: 1%;
+}
+.logoTitleAssets{
+    padding-left: 3px;
+    vertical-align: top;
+}
+#smallUserLogoIMG {
+    display: none;
+    margin-top: 13px;
+    padding-right: 10px;
+}
+#smallUserName {
+    display: inline-flex;
+    line-height: 60px;
+    padding-right: 10px;
+    vertical-align: middle;
+    padding-left: 7px;
+    font-size: 0.7em;
+}
+#addNoteBtn:hover {
+    color: white;
+}
+#addNoteBtn{
+    display: none;
+    background-color: #dcdcdf;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    text-align: center;
+    color: 888b90;
+    font-size: 2.2em;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 15px;
+    cursor: pointer;
+}

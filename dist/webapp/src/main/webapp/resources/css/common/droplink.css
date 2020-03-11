@@ -1,0 +1,79 @@
+.earthImgAsset{
+    margin-top: 21px;
+    margin-left: 7px;
+}
+.languageAssets{
+    margin-left: 5px;
+    margin-right: 7px;
+    margin-top: 0.5%;
+}
+.langText{
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    /*line-height: 60px;*/
+}
+.droplink ul,.droplink div,.droplink div a{
+    padding:0px;margin:0px;
+}
+.droplink {
+    display: inline-block;
+    float: left;
+}
+.droplink:hover{
+    height:auto;
+    background-color:white;
+    border:solid 1px black;
+}
+/*Заголовок в обычном состоянии*/
+.droplink div a{
+    text-align:center;
+    font-size: 1em;
+    display:block;
+    /*padding:12px 0px;*/
+    color:black;
+    text-decoration:none
+}
+.droplink div a img{border:none}
+/*Стиль для заголовка при наведении*/
+.droplink:hover div a {
+/*    color:#FFF;
+    font-weight:bold;
+    position:absolute*/
+}
+/*Скрываем список без наведения*/
+.droplink ul{
+    list-style:none;
+    display:none
+}
+/*Отображаем список при наведении*/
+.droplink:hover ul{
+    display:block;
+    /*margin-top:40px*/
+}
+.droplink li{display:block}
+
+/*Стиль элемента списка*/
+.droplink li a{
+    padding: 5px 12px 4px 36px;
+    background-color: while;
+    display:block;
+    color:black;
+    text-decoration:none;
+    font-family: Arial;
+    font-size: 0.87em;
+    font-weight: bold;
+    line-height: 23px;
+    background-repeat:no-repeat;
+    /*background-position: 10px 3px*/
+}
+/*Стиль элемента при наведении*/
+.droplink li a:hover{
+    background-color:#ffd579;
+}
+.eng a {background-image:url("../../img-res/ico/flags/08_english.png")}
+.ru a {background-image:url("../../img-res/ico/flags/11_russia.png")}
+.by a {background-image:url("../../img-res/ico/flags/03_belarus.png")}
+.ua a {background-image:url("../../img-res/ico/flags/02_ukraine.png")}
+.it a {background-image:url("../../img-res/ico/flags/01_italy.png")}
+.de a {background-image:url("../../img-res/ico/flags/13_germany.png")}

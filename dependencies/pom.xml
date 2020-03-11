@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>gmar-dependencies</artifactId>
+    <name>gmar Dependencies</name>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>by.gmar</groupId>
+        <artifactId>gmar-root</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <properties>
+
+        <javax.annotation-api-ver>1.3.2</javax.annotation-api-ver>
+        <firebase-server-sdk-v>3.0.0</firebase-server-sdk-v>
+        <freemarker-version>2.3.22</freemarker-version>
+        <!--<aspectjweaver.version>1.8.4</aspectjweaver.version>-->
+        <google-api-services-gmail>v1-rev17-1.19.0</google-api-services-gmail>
+        <!--<com.google.gdata>1.47.1</com.google.gdata>-->
+        <google-api-services-admin>email_migration_v2-rev25-1.19.0</google-api-services-admin>
+        <google-api-services-plus>v1-rev199-1.19.0</google-api-services-plus>
+        <!--        <google-api-client>1.19.0</google-api-client>-->
+        <google-api-client>1.20.0</google-api-client>
+        <paypal.rest.version>0.11.0</paypal.rest.version>
+        <paypal.core.version>1.6.5</paypal.core.version>
+        <!--        <org.springframework.social-version>1.1.0.RELEASE</org.springframework.social-version>
+        <org.springframework.social.facebook-version>1.1.0.RELEASE</org.springframework.social.facebook-version>
+        <org.springframework.security.crypto-version>3.2.5.RELEASE</org.springframework.security.crypto-version>-->
+
+        <org.springframework-version>4.3.7.RELEASE</org.springframework-version>
+        
+        <!--<org.springframework.social-version>1.1.4.RELEASE</org.springframework.social-version>-->
+        <org.springframework.social-version>2.0.0.M2</org.springframework.social-version>
+        
+        <org.springframework.social.facebook-version>2.0.3.RELEASE</org.springframework.social.facebook-version>
+        <org.springframework.social.twitter-version>1.1.0.RELEASE</org.springframework.social.twitter-version>
+
+        <!--<org.springframework.security.crypto-version>3.2.5.RELEASE</org.springframework.security.crypto-version>-->
+        <org.springframework.security.crypto-version>4.2.2.RELEASE</org.springframework.security.crypto-version>
+        
+<!--    <org.springframework.security-version>3.2.3.RELEASE</org.springframework.security-version>-->
+        <org.springframework.security-version>4.2.2.RELEASE</org.springframework.security-version>
+        <!--<org.springframework.security-version>4.2.3.BUILD-SNAPSHOT</org.springframework.security-version>-->
+        <spring-security-web-version>4.2.2.RELEASE</spring-security-web-version>
+        
+        <spring-orm-version>4.3.7.RELEASE</spring-orm-version>
+        
+        
+        <!--<httpcomponents.version>4.4</httpcomponents.version>-->        
+        <httpcomponents.version>4.3.3</httpcomponents.version>
+        <commons.beanutils.version>1.9.1</commons.beanutils.version>
+<!--        <org.springframework-version>4.0.3.RELEASE</org.springframework-version>-->
+
+        <org.aspectj-version>1.7.4</org.aspectj-version>
+
+        <org.slf4j-version>1.7.7</org.slf4j-version>
+        <hibernate.version>4.3.6.Final</hibernate.version>
+        <hibernate.validator.version>4.3.1.Final</hibernate.validator.version> <!--4.3.0.Final-->
+        <!--<mysql.connector.version>5.1.26</mysql.connector.version>-->
+        <mysql.connector.version>8.0.11</mysql.connector.version>
+        <!--<jackson-2-version>2.3.3</jackson-2-version>-->
+        <!--<jackson-2-version>2.4.0</jackson-2-version>-->
+        <jackson-2-version>2.8.7</jackson-2-version>
+        <commons-codec-version>1.6</commons-codec-version>
+        <unitils.version>3.3</unitils.version>
+        <liquibase.version>3.0.6</liquibase.version>
+        <liquibase.plugin.version>3.0.6</liquibase.plugin.version>
+        <okhttp.version>2.3.0</okhttp.version>
+        <gson.version>2.3.1</gson.version>
+        <yandex.money.version>3.0.5</yandex.money.version>
+        <joda.datetime.version>2.7</joda.datetime.version>
+        <javamoney.version>1.0</javamoney.version>
+        <!--<moneta.version>1.0.1-SNAPSHOT</moneta.version>-->
+
+        <moneta.version>1.3</moneta.version>
+
+        <moneta.lib.version>0.2-SNAPSHOT</moneta.lib.version>
+        <javamoney-integration-version>0.9-SNAPSHOT</javamoney-integration-version>
+        <cdi-api-vsn>1.0-SP1</cdi-api-vsn>
+    </properties>
+    <repositories>
+
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        
+        <repository>
+            <id>forplay-legacy</id>
+            <url>http://forplay.googlecode.com/svn/mavenrepo</url>
+        </repository>
+        
+        <repository>
+            <id>org.springframework.maven.release</id>
+            <name>Spring Maven Release Repository</name>
+            <url>http://repo.springsource.org/libs-release-local</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!-- For testing against latest Spring snapshots -->
+        <repository>
+            <id>org.springframework.maven.snapshot</id>
+            <name>Spring Maven Snapshot Repository</name>
+            <url>http://repo.springsource.org/libs-snapshot-local</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <!-- For developing against latest Spring milestones -->
+        <repository>
+            <id>org.springframework.maven.milestone</id>
+            <name>Spring Maven Milestone Repository</name>
+            <url>http://repo.springsource.org/libs-milestone-local</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!--        <repository>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+                <id>bintray-yandex-money-maven</id>
+                <name>bintray</name>
+                <url>http://dl.bintray.com/yandex-money/maven</url>
+            </repository>
+        -->
+    </repositories>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>by.gmar</groupId>
+                <artifactId>payments-services</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.money</groupId>
+                <artifactId>money-api</artifactId>
+                <version>${javamoney.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javamoney</groupId>
+                <artifactId>moneta</artifactId>
+                <version>${moneta.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javamoney.lib</groupId>
+                <artifactId>javamoney-exchange-rate-yahoo</artifactId>
+                <version>${moneta.lib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javamoney.integration</groupId>
+                <artifactId>javamoney-cdi</artifactId>
+                <version>${javamoney-integration-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.enterprise</groupId>
+                <artifactId>cdi-api</artifactId>
+                <version>${cdi-api-vsn}</version>
+            </dependency>
+            <!--            <dependency>
+                <groupId>org.javamoney</groupId>
+                <artifactId>javamoney-parent</artifactId>
+                <version>${javamoney.version}</version>
+                <type>pom</type>
+            </dependency>-->
+            
+            <dependency>
+                <!--we use it only for yandex kassa-->
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.datetime.version}</version>
+            </dependency>
+                    
+            <!--            <dependency>
+                <groupId>com.yandex.money</groupId>
+                <artifactId>api</artifactId>
+                <version>${yandex.money.version}</version>
+            </dependency>-->
+            
+            <dependency>
+                <!--we use it only for yandex kassa-->
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <dependency>
+                <!--we use it only for yandex kassa-->
+                <groupId>com.squareup.okhttp</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+        
+            <!--        <dependency>
+                    <groupId>org.apache.tomcat</groupId>
+                    <artifactId>servlet-api</artifactId>
+                    <version>${tomcat.version}</version>
+            </dependency>-->
+
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker-version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.springframework.integration</groupId>
+                <artifactId>spring-integration-mail</artifactId>
+                <version>${org.springframework-version}</version>
+                <!--<version>4.1.2.RELEASE</version>-->
+            </dependency>
+            <dependency>
+                <groupId>javax.mail</groupId>
+                <artifactId>mail</artifactId>
+                <version>1.4.4</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.activation</groupId>
+                <artifactId>activation</artifactId>
+                <version>1.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>${javax.annotation-api-ver}</version>
+            </dependency>
+
+
+            <!--            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver.version}</version>
+            </dependency>-->
+
+            <dependency>
+                <groupId>com.google.apis</groupId>
+                <artifactId>google-api-services-gmail</artifactId>
+                <version>${google-api-services-gmail}</version>
+            </dependency>
+
+            <!--            <dependency>
+                <groupId>com.google.gdata</groupId>
+                <artifactId>core</artifactId>
+                <version>${com.google.gdata}</version>
+            </dependency>-->
+
+            <dependency>
+                <groupId>com.google.apis</groupId>
+                <artifactId>google-api-services-admin</artifactId>
+                <version>${google-api-services-admin}</version>
+            </dependency>
+    
+            <dependency>
+                <groupId>com.google.apis</groupId>
+                <artifactId>google-api-services-plus</artifactId>
+                <version>${google-api-services-plus}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.api-client</groupId>
+                <artifactId>google-api-client</artifactId>
+                <version>${google-api-client}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.paypal.sdk</groupId>
+                <artifactId>rest-api-sdk</artifactId>
+                <version>${paypal.rest.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.paypal.sdk</groupId>
+                <artifactId>paypal-core</artifactId>
+                <version>${paypal.core.version}</version>
+            </dependency>
+            <!-- Spring from one place -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${org.springframework-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- exclude commons-logging once -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${org.springframework-version}</version>
+                <exclusions>
+                    <!-- Exclude Commons Logging in favor of SLF4j -->
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- Security -->
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-config</artifactId>
+                <version>${org.springframework.security-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-web</artifactId>
+                <version>${spring-security-web-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-taglibs</artifactId>
+                <version>${org.springframework.security-version}</version>
+            </dependency>
+
+            <!-- JPA 2.0 API interface -->
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.1-api</artifactId>
+                <version>1.0.0.Final</version>
+            </dependency>
+
+            <!-- Hibernate -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.validator.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>org.hsqldb</groupId>
+                <artifactId>hsqldb</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+
+            <!-- MySQL Connector -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+                <type>jar</type>
+                <scope>compile</scope>
+            </dependency>
+
+
+            <!-- ComboPooledDataSource -->
+            <dependency>
+                <groupId>c3p0</groupId>
+                <artifactId>c3p0</artifactId>
+                <version>0.9.1.2</version>
+            </dependency>
+
+            <!-- Spring Data -->
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-commons</artifactId>
+                <version>1.7.2.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>1.5.2.RELEASE</version>
+                <!--<version>Ingalls-SR1</version>-->
+<!--                <type>pom</type>
+                <scope>import</scope>-->
+            </dependency>
+
+            <!-- javax.validation (JSR-303) -->
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>1.0.0.GA</version>
+            </dependency>
+
+            <!-- AspectJ -->
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${org.aspectj-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
+                <version>${liquibase.version}</version>
+            </dependency>
+            
+            <!-- Logging -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${org.slf4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${org.slf4j-version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jul-to-slf4j</artifactId>
+                <version>${org.slf4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${org.slf4j-version}</version>
+            </dependency>
+            <!--
+                        <dependency>
+                            <groupId>commons-logging</groupId>
+                            <artifactId>commons-logging</artifactId>
+                            <version>1.1.1</version>
+                            <scope>provided</scope>
+                        </dependency>
+            -->
+
+            <!-- @Inject -->
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>1</version>
+            </dependency>
+
+            <!-- Servlet -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>3.0.1</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- JSON -->
+            <!-- the core, which includes Streaming API, shared low-level abstractions (but NOT data-binding) -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson-2-version}</version>
+            </dependency>
+            <!-- Just the annotations; use this dependency if you want to attach annotations
+            to classes without connecting them to the code. -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-hibernate4</artifactId>
+                <version>${jackson-2-version}</version>
+                <!--<version>2.4.0</version>-->
+            </dependency>  
+            
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson-2-version}</version>
+            </dependency>
+            <!-- databinding; ObjectMapper, JsonNode and related classes are here -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-2-version}</version>
+            </dependency>
+
+            <!-- Utilities -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>14.0.1</version>
+            </dependency>
+
+            <!-- Apache commons dependencies -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.3</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>1.2.2</version>
+            </dependency>
+
+            <!-- Test -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>1.9.5</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>1.5.0</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+                <version>1.3</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-library</artifactId>
+                <version>1.3</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.objenesis</groupId>
+                <artifactId>objenesis</artifactId>
+                <version>1.3</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.unitils</groupId>
+                <artifactId>unitils-inject</artifactId>
+                <version>${unitils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.unitils</groupId>
+                <artifactId>unitils-spring</artifactId>
+                <version>${unitils.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>unitils-dbmaintainer</artifactId>
+                        <groupId>org.unitils</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-nop</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.unitils</groupId>
+                <artifactId>unitils-dbunit</artifactId>
+                <version>${unitils.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>slf4j-nop</artifactId>
+                        <groupId>org.slf4j</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+</project>

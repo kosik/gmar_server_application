@@ -1,0 +1,651 @@
+@main-color: #FA5029;
+@footer-color: #3D3D3D;
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  height: 80px;
+  background-color: @main-color;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+header a:active, a:visited, a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.sos-text h1{
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.center-block ul {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.center-block ul li{
+  display: inline;
+  padding: 10px 15px;
+  -webkit-transition: 0.4s; /* Safari */
+  transition: 0.4s;
+}
+
+.center-block ul li:hover {
+  background-color: white;
+  color: @main-color;
+  cursor: pointer;
+}
+
+.right-block div.lang{
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.right-block div.lang span {
+  padding: 5px;
+  -webkit-transition: 0.4s; /* Safari */
+  transition: 0.4s;
+}
+
+.right-block div.lang span.ru:hover, span.eng:hover {
+  background-color: #FFF4EE;
+  cursor: pointer;
+  color: @main-color;
+}
+
+.right-block div.lang .active{
+  background-color: white;
+  color: @main-color;
+}
+
+/*media queries for heade*/
+@media  screen and (max-width : 1024px) {
+  .right-block div.lang span.ru, span.eng {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+@media  screen and (max-width : 990px) {
+
+ header {height: 200px;}
+
+ header {
+   padding-top: 10px;
+   text-align: center;
+ }
+
+ .center-block ul li{
+   width: 100%;
+ }
+}
+
+@media  screen and (max-width : 481px) {
+  header {
+    height: 320px;
+  }
+
+  .center-block ul li{
+    display: block;
+  }
+}
+
+
+/*main section*/
+section.main {
+  padding-top: 40px;
+  height: 500px;
+  background-color: @main-color;
+  color: white;
+}
+
+.main h1 {
+  font-weight: bold;
+  font-size: 44px;
+  margin-top: 20px;
+}
+
+section.main .iphone {
+  position: absolute;
+  top: 0px;
+  right: -70px;
+}
+
+section.main p.intro {
+  padding-top: 15px;
+  font-size: 18px;
+  width: 390px;
+  letter-spacing: 0.3px;
+}
+
+section.main .apps {
+  padding-top: 20px;
+}
+
+section.main .app s img:first-child{
+  padding-right: 15px;
+}
+
+@media  screen and (max-width : 1024px) {
+  section.main .iphone {
+    position: absolute;
+    right: -50px;
+    width: 390px;
+  }
+
+  section.main p.intro {
+    width: 320px;
+  }
+
+  .main h1 {
+    font-size: 36px;
+  }
+
+  section.main {
+      height: 360px;
+  }
+}
+
+@media  screen and (max-width : 768px) {
+  section.main .iphone {
+    position: absolute;
+    right: 0px;
+    width: 390px;
+  }
+
+  section.main p.intro {
+    width: 390px;
+  }
+
+  .main h1 {
+    font-size: 38px;
+  }
+
+}
+
+@media  screen and (max-width : 732px) {
+  section.main .iphone {
+    position: absolute;
+    right: 0px;
+    width: 370px;
+  }
+
+  section.main p.intro {
+    width: 350px;
+  }
+
+  .main h1 {
+    font-size: 38px;
+  }
+
+}
+
+
+@media  screen and (max-width : 670px) {
+  section.main .iphone {
+    position: absolute;
+    right: 0px;
+    width: 350px;
+  }
+
+  section.main p.intro {
+    width: 300px;
+  }
+
+  .main h1 {
+    font-size: 36px;
+  }
+
+}
+
+@media  screen and (max-width : 640px) {
+  section.main .iphone {
+    position: absolute;
+    right: 0px;
+    width: 340px;
+  }
+
+  section.main p.intro {
+    width: 300px;
+  }
+
+  .main h1 {
+    font-size: 35px;
+  }
+}
+
+@media  screen and (max-width : 1024px) {
+  section.main .iphone {
+    position: absolute;
+    right: 0px;
+    width: 320px;
+  }
+
+  section.main p.intro {
+    width: 250px;
+  }
+
+  .main h1 {
+    font-size: 30px;
+  }
+}
+
+@media  screen and (max-width : 440px) {
+  section.main .iphone {
+    position: relative;
+    left: 10px;
+    width: 380px;
+  }
+
+  section.main p.intro {
+    width: 380px;
+  }
+
+  .main h1 {
+    font-weight: bold;
+    font-size: 41px;
+    margin-top: 20px;
+  }
+
+  section.main .apps img{
+    display: inline-block;
+    padding: 10px;
+    width: 180px;
+    padding-top: 0px;
+  }
+
+  section.main {
+      height: 640px;
+  }
+}
+
+@media  screen and (max-width : 375px) {
+  section.main .iphone {
+    position: relative;
+    left: 10px;
+    width: 310px;
+  }
+
+  section.main p.intro {
+    width: 310px;
+  }
+
+  .main h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  section.main .apps img{
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+    padding-top: 0px;
+  }
+
+  section.main {
+      height: 620px;
+  }
+}
+
+
+@media  screen and (max-width : 320px) {
+  section.main .iphone {
+    position: relative;
+    left: 10px;
+    width: 240px;
+  }
+
+  section.main p.intro {
+    width: 280px;
+  }
+
+  .main h1 {
+    font-weight: bold;
+    font-size: 38px;
+    margin-top: 20px;
+  }
+
+  section.main .apps img{
+    display: inline-block;
+    padding: 10px;
+    width: 130px;
+    padding-top: 0px;
+  }
+
+  section.main {
+      height: 600px;
+  }
+}
+
+/*Scope*/
+
+section.scope {
+  height: 500px;
+  background-color: @main-color;
+}
+
+section.scope h1{
+  text-align: center;
+  color: black;
+}
+
+section.scope .jumbs .jumb .rect{
+  margin-left: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50% 50%;
+  background: 50% 50% no-repeat white;
+}
+
+section.scope .jumbs .jumb .txt{
+  display: block;
+  position: absolute;
+  width: 60%;
+  right: 0px;
+  top: 0;
+  color: white;
+  letter-spacing: 0.3px;
+}
+
+section.scope .jumbs .jumb .txt .head-txt{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+section.scope .jumbs .jumb .txt .cont-txt{
+  font-size: 12px;
+}
+
+section.scope .jumbs {
+  margin-top: 40px;
+}
+
+section.scope .jumbs-2 {
+  margin-top: 210px;
+}
+
+@media  screen and (max-width : 1024px) {
+  section.scope {
+    height: 470px;
+  }
+
+  section.scope .jumbs-2 {
+    margin-top: 230px;
+  }
+
+  section.scope .jumbs .jumb .rect{
+    margin-left: 0px;
+  }
+}
+
+@media  screen and (max-width : 770px) {
+  section.scope .jumbs .jumb .rect{
+    margin-left: 0px;
+  }
+
+  section.scope .jumbs-2 {
+    margin-top: 100px;
+  }
+
+  section.scope .jumbs {
+    margin: 20px;
+  }
+
+  section.scope .jumbs .jumb {
+    margin: 40px;
+  }
+
+  section.scope .jumbs .jumb .txt{
+    width: 80%;
+  }
+
+  section.scope {
+    height: 660px;
+  }
+}
+
+@media  screen and (max-width : 470px) {
+  section.scope .jumbs .jumb .rect{
+    margin-left: 0px;
+  }
+
+  section.scope .jumbs-2 {
+    margin-top: 100px;
+  }
+
+  section.scope .jumbs {
+    margin: 0px;
+  }
+
+  section.scope .jumbs .jumb {
+    margin: 70px 20px;
+  }
+
+  section.scope .jumbs .jumb .txt{
+    width: 70%;
+  }
+
+  section.scope {
+    height: 940px;
+  }
+}
+
+@media  screen and (max-width : 320px) {
+  section.scope .jumbs .jumb .rect{
+    margin-left: 0px;
+  }
+
+  section.scope .jumbs-2 {
+    margin-top: 100px;
+  }
+
+  section.scope .jumbs {
+    margin: 0px;
+  }
+
+  section.scope .jumbs .jumb {
+    margin: 70px 0px;
+  }
+
+  section.scope .jumbs .jumb .txt{
+    width: 70%;
+  }
+
+  section.scope {
+    height: 940px;
+  }
+}
+
+
+/*Subscription */
+
+section.subscribe {
+  text-align: center;
+  height: 220px;
+}
+
+section.subscribe h2 {
+  color: @main-color;
+  font-weight: bold;
+}
+
+section.subscribe h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+section.subscribe form div.email-inp {
+  width: 30%;
+  margin-left: 35%;
+}
+
+section.subscribe form div.email-inp input {
+  height: 50px;
+  background-color: #F7F6F6;
+}
+
+section.subscribe form div.email-inp input::-webkit-input-placeholder  {
+  text-align: center;
+  letter-spacing: 0.4px;
+  font-size: 14px;
+  color: #ACACAC;
+}
+
+section.subscribe form div.btn-inp {
+  margin-top: 25px;
+  width: 15%;
+  margin-left: 42.5%;
+}
+
+section.subscribe form div.btn-inp input{
+  height: 40px;
+  background-color: @main-color;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+section.subscribe form div.btn-inp input:hover{
+  background-color: white;
+  color: @main-color;
+  border: 3px solid @main-color;
+
+}
+
+@media  screen and (max-width : 490px) {
+  section.subscribe form div.email-inp {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  section.subscribe form div.btn-inp {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
+@media  screen and (max-width : 991px) {
+  section.subscribe {
+      height: 250px;
+  }
+}
+
+
+
+/*section news*/
+/*
+section.news {
+  background-color: #FAFAFA;
+  height: 400px;
+}
+
+section.news .new {
+  border: 1px solid black;
+  width: 30%;
+  margin: 5px;
+}
+
+section.news .new h4 {
+  font-weight: bold;
+}
+
+section.news .new .date {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+section.news .new .social-inf {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+section.news .new .tags {
+  color: @main-color;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+section.news .new .pre-content {
+  font-size: 13px;
+}*/
+
+
+/*Footer*/
+
+footer {
+  height: 150px;
+  background-color: @footer-color;
+  color: white;
+  border-bottom: none;
+}
+
+footer .apps img{
+  display: inline-block;
+  width: 110px;
+  padding-top: 0px;
+}
+
+footer .typ {
+  color: @main-color;
+}
+
+footer div.legal {
+ padding-left: 235px;
+ font-size: 12px;
+}
+
+@media  screen and (max-width : 991px) {
+  footer {
+    text-align: center;
+    height: 320px;
+  }
+
+  footer div {
+    padding-top: 20px;
+  }
+}
+
+.legal {
+  padding-left: 265px;
+  background-color: @footer-color;
+  color: white;
+  font-size: 11px;
+}
+
+@media  screen and (max-width : 991px) {
+  .legal {
+    border-top: none;
+    padding-left: 0px;
+    text-align: center;
+    background-color: @footer-color;
+    color: white;
+  }
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>payments-services</artifactId>
+    <name>gmar Payments-Services</name>
+    
+    <parent>
+        <artifactId>gmar-dependencies</artifactId>
+        <groupId>by.gmar</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../dependencies/pom.xml</relativePath>
+    </parent>
+    
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.javamoney</groupId>
+            <artifactId>moneta</artifactId>
+            <version>${moneta.version}</version>
+            <!--<type>pom</type>-->
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>javax.money</groupId>-->
+            <!--<artifactId>money-api</artifactId>-->
+            <!--<version>${javamoney.version}</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.javamoney</groupId>-->
+            <!--<artifactId>moneta</artifactId>-->
+            <!--<version>${moneta.version}</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.javamoney.lib</groupId>-->
+            <!--<artifactId>javamoney-exchange-rate-yahoo</artifactId>-->
+            <!--<version>${moneta.lib.version}</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.javamoney.integration</groupId>-->
+            <!--<artifactId>javamoney-cdi</artifactId>-->
+            <!--<version>${javamoney-integration-version}</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
+            <version>${cdi-api-vsn}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>by.gmar</groupId>
+            <artifactId>gmar-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>by.gmar</groupId>
+            <artifactId>gmar-infrastructure-spring</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>by.gmar</groupId>
+            <artifactId>buzzer-email-services</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <!--we use it only for yandex kassa-->
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda.datetime.version}</version>
+        </dependency>
+        
+        <dependency>
+            <!--we use it only for yandex kassa-->
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+        
+        <dependency>
+            <!--we use it only for yandex kassa-->
+            <groupId>com.squareup.okhttp</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okhttp.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

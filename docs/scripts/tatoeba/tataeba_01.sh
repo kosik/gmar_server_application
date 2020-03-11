@@ -1,0 +1,6 @@
+curl --insecure -X GET 'https://localhost/tatoebaImport?startSentenceId=100001&endSentenceId=200000' -H 'Host: localhost'
+curl --insecure -X GET 'https://localhost/tatoebaImport?startSentenceId=100001&endSentenceId=200000' -H 'Host: localhost'
+curl --insecure -X GET 'https://localhost/tatoebaImport?startSentenceId=200001&endSentenceId=300000' -H 'Host: localhost'
+curl --insecure -X GET 'https://localhost/tatoebaImport?startSentenceId=300001&endSentenceId=400000' -H 'Host: localhost'
+curl --insecure -X GET 'https://localhost/tatoebaImport?startSentenceId=400001&endSentenceId=500000' -H 'Host: localhost'
+curl --insecure -X GET 'https://localhost/tatoebaImport?startSentenceId=500001&endSentenceId=600000' -H 'Host: localhost'

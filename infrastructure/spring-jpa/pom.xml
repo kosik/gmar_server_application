@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>gmar-infrastructure-spring-jpa</artifactId>
+    <name>gmar Infrastructure - Spring JPA</name>
+    <parent>
+        <artifactId>gmar-dependencies</artifactId>
+        <groupId>by.gmar</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../dependencies/pom.xml</relativePath>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>by.gmar</groupId>
+            <artifactId>gmar-infrastructure-spring</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>${javax.annotation-api-ver}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <!--<version>4.0.3.RELEASE</version>-->
+            <version>${spring-orm-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <!--<artifactId>hibernate-jpa-2.0-api</artifactId>-->
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+            <!--<version>4.1.7.Final</version>-->
+            <!--<version>4.3.5.Final</version>-->
+        </dependency>
+
+        <dependency>
+            <!-- https://dev.mysql.com/doc/connector-j/8.0/en/
+                MySQL Connector/J 8.0 is highly recommended for use with MySQL Server 8.0, 5.7, 5.6, and 5.5.
+                Please upgrade to MySQL Connector/J 8.0. -->
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+        </dependency>
+
+    </dependencies>
+    
+    <repositories>
+        <repository>
+            <id>mvnrepository.com</id>
+            <name>custom pool repo</name>
+            <url>https://mvnrepository.com/artifact/c3p0/c3p0</url>
+        </repository>
+    </repositories>
+</project>

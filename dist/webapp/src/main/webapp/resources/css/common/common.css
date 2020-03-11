@@ -1,0 +1,319 @@
+/* 
+    Created on : Oct 10, 2014, 7:38:05 PM
+    Author     : oDrive Team
+*/
+/*6cc432*/
+div ul{}
+div ul li{}
+.blockAssets{
+    margin-top: 19px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.activeProduct{
+    max-width: 200px;
+    padding-bottom: 3px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+}
+.error-text{
+    padding: 5px 0 0 25px;
+}
+.error-icon{
+    /*right: 4px;*/
+    margin-top: 4px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(/resources/img-res/ico/error_correct.png) 0 0 repeat-x;
+}
+.correct-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(/resources/img-res/ico/error_correct.png) 20px 0 repeat-x;
+}
+.error{
+    color:red;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.commonPageContent {
+    /*top:0px;*/
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    min-width: 100%;
+    min-width: 100%;
+}
+.commonPannelsContent{
+    float: right;
+    width: calc(100% - 7% - 2px);
+    height: 100%;
+}
+.centerTernaryColumsContent{
+    float: right;
+    width: 93%;
+    height: 100%;
+}
+.rightTernaryColumnsContent{
+    float: right;
+    width: 10.7%;
+    height: 100%;
+}
+.blockHeader {
+    height: 19px;
+    width: calc(100% - 10px);
+    border: 1px solid black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #3a3a3a;
+    padding-bottom: 4px;
+    margin-right: 14px;
+    margin-left: 10px;
+}
+.blockHeaderDownArrow {
+    width: 11px;
+    height: 100%;
+    background-image: url("/resources/img-res/ico/common/blockHeaderDownArrow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-right: 5px;
+    float: right;
+}
+.blockHeaderDownArrowRotate{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+}
+.blockHeaderTitle{
+    float: left;
+    margin-left: 15px;
+    margin-top: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 19px;
+}
+.white-color{
+    background-color: white;
+}
+/**********************************************************/
+/*HEADER *********************************************/
+#header {
+    /*background: #ccc;*/
+}
+#headPanel{
+    width: 100%;
+    min-width: 100%;
+    height: 38px;
+    min-height: 38px;
+    background: #fe910f;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fe910f;
+    border-bottom-color: #f68c0e;
+    position: relative;
+}
+#portalLogo{
+    padding-left: 5px;
+}
+#overallSearch{
+    left: 350px;
+    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    display: block;
+}
+#labelForOverallSearch{
+    left: 110px;
+    color: white;
+}
+
+#headerInviteFriendsICO:hover {
+    background-color: #fe910f;
+    box-shadow: 1px 0px 0px 1px #fe910f;
+    height: 100%;
+}
+.inviteFriendsICO{
+    padding-top: 30%;
+    padding-right: 5px;
+    position: absolute;
+}
+#localeDataForm{
+    padding-left: 4px;
+}
+.smallPortalLogo{
+    /*padding-top: 5%;*/
+}
+/**************************************************
+
+/*COMMON ***************************************************/
+.grayscale{
+    filter: opacity(0.25);
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+}
+.centredText{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.emptyBlockContentImageLeft{
+    float: left;
+    padding-left: 20%;
+    margin-top: 3%;
+}
+.emptyBlockContentText{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 13%;
+    text-align: center;
+}
+.emptyBlockContentImageRight{
+    float: right;
+    padding-right: 20%;
+    margin-top: 2%;
+}
+.emptyBlockContentImage {
+    max-height: 60%;
+    height: 60%;
+    width: 75%;
+    border: 2px dashed #d9ddde;
+}
+.emptyBlockContent{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #f0f1f3;
+}
+.customTab {
+    height: 65px;
+    width: 100%;
+    box-shadow: 0px 0px 0px 1px white;
+    border-style: solid;
+    border-width: 1px;
+    border-left-width: 0px;
+    border-color: #c9e2df;
+    padding-bottom: 3px;
+}
+.customTabTitle {
+    color: black;
+    min-height: 100%;
+    width: 28%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    float: left;
+}
+.customTabSlider {
+    float: left;
+    background: #ececec;
+    width: 1px;
+    max-height: 40px;
+    height: 40px;
+    border-color: #e1e1e1;
+    border-right-style: solid;
+    border-width: 1px;
+    margin-top: 13px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.customTabButtonSelectionPointer{
+    border-color: #abb4bc;
+    border-bottom-style: solid;
+    border-width: 2px;
+    box-shadow: 0px 1px #386e74;
+    /*margin-top: -1px;*/
+}
+.customTabButton {
+    max-width: 20%;
+    width: 15%;
+    min-width: 42px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.customTabButton:hover {
+    background-color: #e2ebf2;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.customTabButtonImage{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.icoBtn{
+    background-color: #408ac9;
+    text-align: center;
+    cursor: pointer;
+    width: 167px;
+    max-height: 25px;
+    padding: 4px;
+    margin: 4px;
+    display: inline-block;
+    border: 1px solid black;
+}
+.icoBtnText:hover{
+    color: yellow;
+}
+.invisible{
+    display: none;
+}
+.leftFloat{
+    float: left;
+}
+.rightFloat{
+    float: right;
+}
+.inline-block{
+    display:inline-block;
+}
+.position-relative{
+    position: relative;
+}
+.centredBlock {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+body {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    min-width: 1005px;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    background: #f5f5f5;
+    overflow-x:hidden;
+    font-size: 0.95em;    
+}
+.width-100-percent{
+    width: 100%;
+}
+.dsplay-inline{
+    display: inline;
+}
+.textField{
+    font-size: 15px;
+    border-color: e5e5e5;
+    padding: 2px;
+}

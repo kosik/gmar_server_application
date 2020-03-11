@@ -1,0 +1,49 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/security
+    http://www.springframework.org/schema/security/spring-security-4.2.xsd">
+
+    <security:http pattern="/favicon.ico" security="none" /> 
+    <security:http pattern="/resources/**" security="none" />
+    <security:http pattern="/content/**" security="none" />
+
+
+    <security:http pattern="/repository/**" use-expressions="true" auto-config="true">
+        <security:form-login login-page="/" authentication-failure-url="/status" />
+
+        <security:intercept-url pattern="/repository/**" method="GET" access="hasAnyRole('ROLE_CLIENT', 'BACKEND_ADMIN')" />
+
+        <!--<security:custom-filter ref="filterBinaryRepoRedirect" before="FILTER_SECURITY_INTERCEPTOR" />-->
+    </security:http>
+
+    <security:http use-expressions="true" pattern="/secure/**" auto-config="true">
+        <security:csrf disabled="true"/>
+        <security:intercept-url pattern="/secure/**" access="isAuthenticated()" method="POST" />
+        <security:custom-filter ref="customAccessDenyResponseFilter" before="FILTER_SECURITY_INTERCEPTOR" />
+        <security:intercept-url pattern="/login2" access="permitAll" />
+    </security:http>
+
+    <security:http use-expressions="true" pattern="/**" >
+        <!--<security:cors />-->
+        <security:csrf disabled="true"/>
+        <security:intercept-url pattern="/secure/**" access="isAuthenticated()" method="GET" />
+        <security:form-login login-page="/" authentication-failure-url="/status" />
+        <security:logout logout-url="/logout" delete-cookies="JSESSIONID" invalidate-session="true" logout-success-url="/" />
+        
+        <security:intercept-url pattern="/" access="permitAll" />
+        <security:intercept-url pattern="/register" access="permitAll" />
+        <security:intercept-url pattern="/login2" access="permitAll" />
+    </security:http>
+    
+    <security:global-method-security pre-post-annotations="enabled" proxy-target-class="true"/>
+   
+    <security:authentication-manager erase-credentials="true">
+        <security:authentication-provider user-service-ref="defaultUserService" >
+            <security:password-encoder ref="passwordEncoder"/>
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+</beans>

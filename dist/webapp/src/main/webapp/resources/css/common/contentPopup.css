@@ -1,0 +1,16 @@
+.contentMsg{
+    width: 98%;
+    min-height: 155px;
+}
+#contentTags{
+    width: 98%;
+}
+#contentTitle{
+    width: 98%;
+}
+#contentPopup{
+    display: none;
+    width: 480px;
+    height: 266px;
+}
+/*#ffd579*/

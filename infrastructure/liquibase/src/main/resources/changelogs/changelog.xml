@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="0-init-schedulers" author="s.kosik">
+        <insert tableName="schedules">
+            <column name="title">day_challenge</column>
+            <column name="last_update_time">0</column>
+            <column name="period_in_minutes">1440</column>
+            <column name="active" valueBoolean="true" />
+        </insert>
+
+        <insert tableName="schedules">
+            <column name="title">download_new_earth_places</column>
+            <column name="last_update_time">0</column>
+            <column name="period_in_minutes">60</column>
+            <column name="active" valueBoolean="true" />
+        </insert>
+    </changeSet>
+
+    <changeSet id="02-init-users" author="s.kosik" runInTransaction="true">
+        <insert tableName="users">
+            <column name="id">1</column>
+            <column name="create_time" type="datetime">1914-11-25 19:44:03</column>
+            <column name="account_non_expired">true</column>
+            <column name="account_non_locked"></column>
+            <column name="credentials_non_expired"></column>
+            <column name="email">info@gmar.com</column>
+            <column name="enabled">true</column>
+            <column name="password">25f9e794323b453885f5181f1b624d0b</column>
+            <column name="privacy_permissions"></column>
+            <column name="role">EDITOR</column>
+            <column name="verified" valueBoolean="true"></column>
+            <column name="read_only" valueBoolean="false"></column>
+            <column name="account_non_expired" valueBoolean="true"></column>
+            <column name="account_non_locked" valueBoolean="true"></column>
+            <column name="credentials_non_expired" valueBoolean="true"></column>
+            <column name="enabled" valueBoolean="true"></column>
+        </insert>
+        
+        <insert tableName="user_info">
+            <column name="id">1</column>
+            <column name="create_time" type="datetime">1914-11-23 19:44:03</column>
+            <column name="birthday" type="datetime">1915-11-23 19:44:03</column>
+            <column name="first_name">Inf</column>
+            <column name="gender" valueBoolean="true"></column>
+            <column name="last_name">Space</column>
+            <column name="phone_number">+0001111111</column>
+            <column name="time_zone">CET</column>
+            <column name="owner">1</column>
+            <column name="currency">USD</column>
+        </insert>
+        <insert tableName="users">
+            <column name="id">2</column>
+            <column name="create_time" type="datetime">1914-11-25 19:44:03</column>
+            <column name="account_non_expired">true</column>
+            <column name="account_non_locked"></column>
+            <column name="credentials_non_expired"></column>
+            <column name="email">social@gmar.com</column>
+            <column name="enabled">true</column>
+            <column name="password">d1ab34e587da73e9dc6b5678059997e6</column>
+            <column name="privacy_permissions"></column>
+            <column name="role">EDITOR</column>
+            <column name="verified" valueBoolean="true"></column>
+            <column name="read_only" valueBoolean="false"></column>
+            <column name="account_non_expired" valueBoolean="true"></column>
+            <column name="account_non_locked" valueBoolean="true"></column>
+            <column name="credentials_non_expired" valueBoolean="true"></column>
+            <column name="enabled" valueBoolean="true"></column>
+        </insert>
+        <insert tableName="user_info">
+            <column name="id">2</column>
+            <column name="create_time" type="datetime">1914-11-23 19:44:03</column>
+            <column name="birthday" type="datetime">1915-11-23 19:44:03</column>
+            <column name="first_name">Nex Social</column>
+            <column name="gender" valueBoolean="true"></column>
+            <column name="last_name">Team</column>
+            <column name="phone_number">+0001011111</column>
+            <column name="time_zone">CET</column>
+            <column name="owner">2</column>
+            <column name="currency">USD</column>
+        </insert>
+        <insert tableName="users">
+            <column name="id">3</column>
+            <column name="create_time" type="datetime">1914-11-25 19:44:03</column>
+            <column name="account_non_expired">true</column>
+            <column name="account_non_locked"></column>
+            <column name="credentials_non_expired"></column>
+            <column name="email">team@gmar.com</column>
+            <column name="enabled">true</column>
+            <column name="password">56ca5de4cad69a04cc1c9c14da3808bf</column>
+            <column name="privacy_permissions"></column>
+            <column name="role">BACKEND_ADMIN</column>
+            <column name="verified" valueBoolean="true"></column>
+            <column name="read_only" valueBoolean="false"></column>
+            <column name="account_non_expired" valueBoolean="true"></column>
+            <column name="account_non_locked" valueBoolean="true"></column>
+            <column name="credentials_non_expired" valueBoolean="true"></column>
+            <column name="enabled" valueBoolean="true"></column>
+        </insert>
+        <insert tableName="user_info">
+            <column name="id">3</column>
+            <column name="create_time" type="datetime">1914-11-23 19:44:03</column>
+            <column name="birthday" type="datetime">1915-11-23 19:44:03</column>
+            <column name="first_name">Nex</column>
+            <column name="gender" valueBoolean="true"></column>
+            <column name="last_name">Team</column>
+            <column name="phone_number">+0001101111</column>
+            <column name="time_zone">CET</column>
+            <column name="owner">3</column>
+            <column name="currency">USD</column>
+        </insert>
+        <insert tableName="users">
+            <column name="id">4</column>
+            <column name="create_time" type="datetime">1914-11-25 19:44:03</column>
+            <column name="account_non_expired">true</column>
+            <column name="account_non_locked"></column>
+            <column name="credentials_non_expired"></column>
+            <column name="email">odrive.info@gmail.com</column>
+            <column name="enabled">true</column>
+            <column name="password">e3700e22ee53cd2e60dbab10d30f2250</column>
+            <column name="privacy_permissions"></column>
+            <column name="role">USER</column>
+            <column name="verified" valueBoolean="true"></column>
+            <column name="read_only" valueBoolean="false"></column>
+            <column name="account_non_expired" valueBoolean="true"></column>
+            <column name="account_non_locked" valueBoolean="true"></column>
+            <column name="credentials_non_expired" valueBoolean="true"></column>
+            <column name="enabled" valueBoolean="true"></column>
+        </insert>
+        <insert tableName="user_info">
+            <column name="id">4</column>
+            <column name="create_time" type="datetime">1914-11-23 19:44:03</column>
+            <column name="birthday" type="datetime">1915-11-23 19:44:03</column>
+            <column name="first_name">Nex</column>
+            <column name="gender" valueBoolean="true"></column>
+            <column name="last_name">Team</column>
+            <column name="phone_number">+0001111011</column>
+            <column name="time_zone">CET</column>
+            <column name="owner">4</column>
+            <column name="currency">USD</column>
+        </insert>
+    </changeSet>
+    
+
+<!--    ********************************************************
+    We are using 639-2/T lang standart
+    http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes 
+    Pay attention to following one:
+    http://en.wikipedia.org/wiki/ISO_3166-1
+    https://github.com/googlei18n/libphonenumber-->
+    
+    
+    <changeSet id="02-country_tags" author="s.kosik">
+        <insert tableName="countries">
+            <column name="language_tag">pus</column>
+            <column name="country_tag">af</column>
+            <column name="phone_code" type="INT">93</column>
+            <column name="country_name">Afghanistan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">srp</column>
+            <column name="country_tag">al</column>
+            <column name="phone_code" type="INT">355</column>
+            <column name="country_name">Albania</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">dz</column>
+            <column name="phone_code" type="INT">213</column>
+            <column name="country_name">Algeria</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">ad</column>
+            <column name="phone_code" type="INT">376</column>
+            <column name="country_name">Andorra</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">por</column>
+            <column name="country_tag">ao</column>
+            <column name="phone_code" type="INT">244</column>
+            <column name="country_name">Angola</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">rus</column>
+            <column name="country_tag">aq</column>
+            <column name="phone_code" type="INT">672</column>
+            <column name="country_name">Antarctica</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">ar</column>
+            <column name="phone_code" type="INT">54</column>
+            <column name="country_name">Argentina</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">hye</column>
+            <column name="country_tag">am</column>
+            <column name="phone_code" type="INT">374</column>
+            <column name="country_name">Armenia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">nld</column>
+            <column name="country_tag">aw</column>
+            <column name="phone_code" type="INT">297</column>
+            <column name="country_name">Aruba</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">au</column>
+            <column name="phone_code" type="INT">61</column>
+            <column name="country_name">Australia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">deu</column>
+            <column name="country_tag">at</column>
+            <column name="phone_code" type="INT">43</column>
+            <column name="country_name">Austria</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">aze</column>
+            <column name="country_tag">az</column>
+            <column name="phone_code" type="INT">994</column>
+            <column name="country_name">Azerbaijan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">bh</column>
+            <column name="phone_code" type="INT">973</column>
+            <column name="country_name">Bahrain</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ben</column>
+            <column name="country_tag">bd</column>
+            <column name="phone_code" type="INT">880</column>
+            <column name="country_name">Bangladesh</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">bel</column>
+            <column name="country_tag">by</column>
+            <column name="phone_code" type="INT">375</column>
+            <column name="country_name">Belarus</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">be</column>
+            <column name="phone_code" type="INT">32</column>
+            <column name="country_name">Belgium</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">bz</column>
+            <column name="phone_code" type="INT">501</column>
+            <column name="country_name">Belize</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">bj</column>
+            <column name="phone_code" type="INT">229</column>
+            <column name="country_name">Benin</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">zho</column>
+            <column name="country_tag">bt</column>
+            <column name="phone_code" type="INT">975</column>
+            <column name="country_name">Bhutan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">bo</column>
+            <column name="phone_code" type="INT">591</column>
+            <column name="country_name">Bolivia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">srp</column>
+            <column name="country_tag">ba</column>
+            <column name="phone_code" type="INT">387</column>
+            <column name="country_name">Bosnia And Herzegovina</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">tsn</column>
+            <column name="country_tag">bw</column>
+            <column name="phone_code" type="INT">267</column>
+            <column name="country_name">Botswana</column>
+        </insert>
+         <insert tableName="countries">
+             <column name="language_tag">por</column>
+            <column name="country_tag">br</column>
+            <column name="phone_code" type="INT">55</column>
+            <column name="country_name">Brazil</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">msa</column>
+            <column name="country_tag">bn</column>
+            <column name="phone_code" type="INT">673</column>
+            <column name="country_name">Brunei Darussalam</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">chu</column>
+            <column name="country_tag">bg</column>
+            <column name="phone_code" type="INT">359</column>
+            <column name="country_name">Bulgaria</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">bf</column>
+            <column name="phone_code" type="INT">226</column>
+            <column name="country_name">Burkina Faso</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">mya</column>
+            <column name="country_tag">mm</column>
+            <column name="phone_code" type="INT">95</column>
+            <column name="country_name">Myanmar</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">run</column>
+            <column name="country_tag">bi</column>
+            <column name="phone_code" type="INT">257</column>
+            <column name="country_name">Burundi</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">khm</column>
+            <column name="country_tag">kh</column>
+            <column name="phone_code" type="INT">855</column>
+            <column name="country_name">Cambodia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">cm</column>
+            <column name="phone_code" type="INT">237</column>
+            <column name="country_name">Cameroon</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">ca</column>
+            <column name="phone_code" type="INT">1</column>
+            <column name="country_name">Canada</column>
+        </insert>
+
+        <insert tableName="countries">
+            <column name="language_tag">por</column>
+            <column name="country_tag">cv</column>
+            <column name="phone_code" type="INT">238</column>
+            <column name="country_name">Cape Verde</column>
+        </insert>
+         <insert tableName="countries">
+             <column name="language_tag">sag</column>
+            <column name="country_tag">cf</column>
+            <column name="phone_code" type="INT">236</column>
+            <column name="country_name">Central African Republic</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">td</column>
+            <column name="phone_code" type="INT">235</column>
+            <column name="country_name">Chad</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">cl</column>
+            <column name="phone_code" type="INT">56</column>
+            <column name="country_name">Chile</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">zho</column>
+            <column name="country_tag">cn</column>
+            <column name="phone_code" type="INT">86</column>
+            <column name="country_name">China</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">cx</column>
+            <column name="phone_code" type="INT">61</column>
+            <column name="country_name">Christmas Island</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">co</column>
+            <column name="phone_code" type="INT">57</column>
+            <column name="country_name">Colombia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">km</column>
+            <column name="phone_code" type="INT">269</column>
+            <column name="country_name">Comoros</column>
+        </insert>
+         <insert tableName="countries">
+             <column name="language_tag">fre</column>
+            <column name="country_tag">cd</column>
+            <column name="phone_code" type="INT">243</column>
+            <column name="country_name">Congo</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">ck</column>
+            <column name="phone_code" type="INT">682</column>
+            <column name="country_name">Cook Islands</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">cr</column>
+            <column name="phone_code" type="INT">506</column>
+            <column name="country_name">Costa Rica</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">hrv</column>
+            <column name="country_tag">hr</column>
+            <column name="phone_code" type="INT">385</column>
+            <column name="country_name">Croatia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">cu</column>
+            <column name="phone_code" type="INT">53</column>
+            <column name="country_name">Cuba</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ell</column>
+            <column name="country_tag">cy</column>
+            <column name="phone_code" type="INT">357</column>
+            <column name="country_name">Cyprus</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ces</column>
+            <column name="country_tag">cz</column>
+            <column name="phone_code" type="INT">420</column>
+            <column name="country_name">Czech Republic</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">dan</column>
+            <column name="country_tag">dk</column>
+            <column name="phone_code" type="INT">45</column>
+            <column name="country_name">Denmark</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">dj</column>
+            <column name="phone_code" type="INT">253</column>
+            <column name="country_name">Djibouti</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">por</column>
+            <column name="country_tag">tl</column>
+            <column name="phone_code" type="INT">670</column>
+            <column name="country_name">Timor-leste</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">ec</column>
+            <column name="phone_code" type="INT">593</column>
+            <column name="country_name">Ecuador</column>
+        </insert>
+         <insert tableName="countries">
+             <column name="language_tag">ara</column>
+            <column name="country_tag">eg</column>
+            <column name="phone_code" type="INT">20</column>
+            <column name="country_name">Egypt</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">sv</column>
+            <column name="phone_code" type="INT">503</column>
+            <column name="country_name">El Salvador</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">gq</column>
+            <column name="phone_code" type="INT">240</column>
+            <column name="country_name">Equatorial Guinea</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">amh</column>
+            <column name="country_tag">er</column>
+            <column name="phone_code" type="INT">291</column>
+            <column name="country_name">Eritrea</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">est</column>
+            <column name="country_tag">ee</column>
+            <column name="phone_code" type="INT">372</column>
+            <column name="country_name">Estonia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">amh</column>
+            <column name="country_tag">et</column>
+            <column name="phone_code" type="INT">251</column>
+            <column name="country_name">Ethiopia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">fk</column>
+            <column name="phone_code" type="INT">500</column>
+            <column name="country_name">Falkland Islands</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fao</column>
+            <column name="country_tag">fo</column>
+            <column name="phone_code" type="INT">298</column>
+            <column name="country_name">Faroe Islands</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">fj</column>
+            <column name="phone_code" type="INT">679</column>
+            <column name="country_name">Fiji</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fin</column>
+            <column name="country_tag">fi</column>
+            <column name="phone_code" type="INT">358</column>
+            <column name="country_name">Finland</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">fr</column>
+            <column name="phone_code" type="INT">33</column>
+            <column name="country_name">France</column>
+        </insert>
+         <insert tableName="countries">
+             <column name="language_tag">fre</column>
+            <column name="country_tag">pf</column>
+            <column name="phone_code" type="INT">689</column>
+            <column name="country_name">French Polynesia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">ga</column>
+            <column name="phone_code" type="INT">241</column>
+            <column name="country_name">Gabon</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">gm</column>
+            <column name="phone_code" type="INT">220</column>
+            <column name="country_name">Gambia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">kat</column>
+            <column name="country_tag">ge</column>
+            <column name="phone_code" type="INT">995</column>
+            <column name="country_name">Georgia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">deu</column>
+            <column name="country_tag">de</column>
+            <column name="phone_code" type="INT">49</column>
+            <column name="country_name">Germany</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">gh</column>
+            <column name="phone_code" type="INT">233</column>
+            <column name="country_name">Ghana</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">gi</column>
+            <column name="phone_code" type="INT">350</column>
+            <column name="country_name">Gibraltar</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ell</column>
+            <column name="country_tag">gr</column>
+            <column name="phone_code" type="INT">30</column>
+            <column name="country_name">Greece</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">kal</column>
+            <column name="country_tag">gl</column>
+            <column name="phone_code" type="INT">299</column>
+            <column name="country_name">Greenland</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">gt</column>
+            <column name="phone_code" type="INT">502</column>
+            <column name="country_name">Guatemala</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">gn</column>
+            <column name="phone_code" type="INT">224</column>
+            <column name="country_name">Guinea</column>
+        </insert>
+         <insert tableName="countries">
+             <column name="language_tag">por</column>
+            <column name="country_tag">gw</column>
+            <column name="phone_code" type="INT">245</column>
+            <column name="country_name">Guinea-bissau</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">gy</column>
+            <column name="phone_code" type="INT">592</column>
+            <column name="country_name">Guyana</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">ht</column>
+            <column name="phone_code" type="INT">509</column>
+            <column name="country_name">Haiti</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">hn</column>
+            <column name="phone_code" type="INT">504</column>
+            <column name="country_name">Honduras</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">zho</column>
+            <column name="country_tag">hk</column>
+            <column name="phone_code" type="INT">852</column>
+            <column name="country_name">Hong Kong</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">hun</column>
+            <column name="country_tag">hu</column>
+            <column name="phone_code" type="INT">36</column>
+            <column name="country_name">Hungary</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">in</column>
+            <column name="phone_code" type="INT">91</column>
+            <column name="country_name">India</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ind</column>
+            <column name="country_tag">id</column>
+            <column name="phone_code" type="INT">62</column>
+            <column name="country_name">Indonesia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fas</column>
+            <column name="country_tag">ir</column>
+            <column name="phone_code" type="INT">98</column>
+            <column name="country_name">Iran</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">iq</column>
+            <column name="phone_code" type="INT">964</column>
+            <column name="country_name">Iraq</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">ie</column>
+            <column name="phone_code" type="INT">353</column>
+            <column name="country_name">Ireland</column>
+        </insert>
+         <insert tableName="countries">
+             <column name="language_tag">eng</column>
+            <column name="country_tag">im</column>
+            <column name="phone_code" type="INT">833</column>
+            <column name="country_name">Isle Of Man</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">il</column>
+            <column name="phone_code" type="INT">972</column>
+            <column name="country_name">Israel</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ita</column>
+            <column name="country_tag">it</column>
+            <column name="phone_code" type="INT">39</column>
+            <column name="country_name">Italy</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">ci</column>
+            <column name="phone_code" type="INT">225</column>
+            <column name="country_name">Cote d'Ivoire</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">jpn</column>
+            <column name="country_tag">jp</column>
+            <column name="phone_code" type="INT">81</column>
+            <column name="country_name">Japan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">jo</column>
+            <column name="phone_code" type="INT">962</column>
+            <column name="country_name">Jordan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">kaz</column>
+            <column name="country_tag">kz</column>
+            <column name="phone_code" type="INT">7</column>
+            <column name="country_name">Kazakhstan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">ke</column>
+            <column name="phone_code" type="INT">254</column>
+            <column name="country_name">Kenya</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">ki</column>
+            <column name="phone_code" type="INT">686</column>
+            <column name="country_name">Kiribati</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">kw</column>
+            <column name="phone_code" type="INT">965</column>
+            <column name="country_name">Kuwait</column>
+        </insert>
+         <insert tableName="countries">
+            <column name="language_tag">kir</column>
+            <column name="country_tag">kg</column>
+            <column name="phone_code" type="INT">996</column>
+            <column name="country_name">Kyrgyzstan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">lao</column>
+            <column name="country_tag">la</column>
+            <column name="phone_code" type="INT">856</column>
+            <column name="country_name">Laos</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">lav</column>
+            <column name="country_tag">lv</column>
+            <column name="phone_code" type="INT">371</column>
+            <column name="country_name">Latvia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">lb</column>
+            <column name="phone_code" type="INT">961</column>
+            <column name="country_name">Lebanon</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">sot</column>
+            <column name="country_tag">ls</column>
+            <column name="phone_code" type="INT">266</column>
+            <column name="country_name">Lesotho</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">lr</column>
+            <column name="phone_code" type="INT">231</column>
+            <column name="country_name">Liberia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">ly</column>
+            <column name="phone_code" type="INT">218</column>
+            <column name="country_name">Libya</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">deu</column>
+            <column name="country_tag">li</column>
+            <column name="phone_code" type="INT">423</column>
+            <column name="country_name">Liechtenstein</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">lit</column>
+            <column name="country_tag">lt</column>
+            <column name="phone_code" type="INT">370</column>
+            <column name="country_name">Lithuania</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">lu</column>
+            <column name="phone_code" type="INT">352</column>
+            <column name="country_name">Luxembourg</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">zho</column>
+            <column name="country_tag">mo</column>
+            <column name="phone_code" type="INT">853</column>
+            <column name="country_name">Macao</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">mkd</column>
+            <column name="country_tag">mk</column>
+            <column name="phone_code" type="INT">389</column>
+            <column name="country_name">Macedonia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">mg</column>
+            <column name="phone_code" type="INT">261</column>
+            <column name="country_name">Madagascar</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">mis</column>
+            <column name="country_tag">mw</column>
+            <column name="phone_code" type="INT">265</column>
+            <column name="country_name">Malawi</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">msa</column>
+            <column name="country_tag">60</column>
+            <column name="phone_code" type="INT">60</column>
+            <column name="country_name">Malaysia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">div</column>
+            <column name="country_tag">mv</column>
+            <column name="phone_code" type="INT">960</column>
+            <column name="country_name">Maldives</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">ml</column>
+            <column name="phone_code" type="INT">223</column>
+            <column name="country_name">Mali</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">mt</column>
+            <column name="phone_code" type="INT">356</column>
+            <column name="country_name">Malta</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">mh</column>
+            <column name="phone_code" type="INT">692</column>
+            <column name="country_name">Marshall Islands</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">mr</column>
+            <column name="phone_code" type="INT">222</column>
+            <column name="country_name">Mauritania</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">mu</column>
+            <column name="phone_code" type="INT">230</column>
+            <column name="country_name">Mauritius</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">yt</column>
+            <column name="phone_code" type="INT">262</column>
+            <column name="country_name">Mayotte</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">mx</column>
+            <column name="phone_code" type="INT">52</column>
+            <column name="country_name">Mexico</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">fm</column>
+            <column name="phone_code" type="INT">691</column>
+            <column name="country_name">Federated States Of Micronesia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ron</column>
+            <column name="country_tag">md</column>
+            <column name="phone_code" type="INT">373</column>
+            <column name="country_name">Moldova</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">mc</column>
+            <column name="phone_code" type="INT">377</column>
+            <column name="country_name">Monaco</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">mon</column>
+            <column name="country_tag">mn</column>
+            <column name="phone_code" type="INT">976</column>
+            <column name="country_name">Mongolia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">srp</column>
+            <column name="country_tag">me</column>
+            <column name="phone_code" type="INT">382</column>
+            <column name="country_name">Montenegro</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">ma</column>
+            <column name="phone_code" type="INT">212</column>
+            <column name="country_name">Morocco</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">por</column>
+            <column name="country_tag">mz</column>
+            <column name="phone_code" type="INT">258</column>
+            <column name="country_name">Mozambique</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">na</column>
+            <column name="phone_code" type="INT">264</column>
+            <column name="country_name">Namibia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">nr</column>
+            <column name="phone_code" type="INT">674</column>
+            <column name="country_name">Nauru</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">nep</column>
+            <column name="country_tag">np</column>
+            <column name="phone_code" type="INT">977</column>
+            <column name="country_name">Nepal</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">nld</column>
+            <column name="country_tag">nl</column>
+            <column name="phone_code" type="INT">31</column>
+            <column name="country_name">Netherlands</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">nc</column>
+            <column name="phone_code" type="INT">687</column>
+            <column name="country_name">New Caledonia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">nz</column>
+            <column name="phone_code" type="INT">64</column>
+            <column name="country_name">New Zealand</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">ni</column>
+            <column name="phone_code" type="INT">505</column>
+            <column name="country_name">Nicaragua</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">ne</column>
+            <column name="phone_code" type="INT">227</column>
+            <column name="country_name">Niger</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">ng</column>
+            <column name="phone_code" type="INT">234</column>
+            <column name="country_name">Nigeria</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">nu</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">683</column>
+            <column name="country_name">Niue</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">kp</column>
+            <column name="language_tag">kor</column>
+            <column name="phone_code" type="INT">850</column>
+            <column name="country_name">Korea</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">nor</column>
+            <column name="country_tag">no</column>
+            <column name="phone_code" type="INT">47</column>
+            <column name="country_name">Norway</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">om</column>
+            <column name="language_tag">acx</column>
+            <column name="phone_code" type="INT">968</column>
+            <column name="country_name">Oman</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">pk</column>
+            <column name="language_tag">urd</column>
+            <column name="phone_code" type="INT">92</column>
+            <column name="country_name">Pakistan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">pw</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">680</column>
+            <column name="country_name">Palau</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">pa</column>
+            <column name="language_tag">spa</column>
+            <column name="phone_code" type="INT">507</column>
+            <column name="country_name">Panama</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">pg</column>
+            <column name="phone_code" type="INT">675</column>
+            <column name="country_name">Papua New Guinea</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">py</column>
+            <column name="language_tag">spa</column>
+            <column name="phone_code" type="INT">595</column>
+            <column name="country_name">Paraguay</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">pe</column>
+            <column name="phone_code" type="INT">51</column>
+            <column name="country_name">Peru</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fil</column>
+            <column name="country_tag">ph</column>
+            <column name="phone_code" type="INT">63</column>
+            <column name="country_name">Philippines</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">pn</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">870</column>
+            <column name="country_name">Pitcairn</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">pol</column>
+            <column name="country_tag">pl</column>
+            <column name="phone_code" type="INT">48</column>
+            <column name="country_name">Poland</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">por</column>
+            <column name="country_tag">pt</column>
+            <column name="phone_code" type="INT">351</column>
+            <column name="country_name">Portugal</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">qa</column>
+            <column name="language_tag">ara</column>
+            <column name="phone_code" type="INT">974</column>
+            <column name="country_name">Qatar</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">ro</column>
+            <column name="language_tag">ron</column>
+            <column name="phone_code" type="INT">40</column>
+            <column name="country_name">Romania</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">ru</column>
+            <column name="language_tag">rus</column>
+            <column name="phone_code" type="INT">7</column>
+            <column name="country_name">Russian Federation</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">rw</column>
+            <column name="language_tag">kin</column>
+            <column name="phone_code" type="INT">250</column>
+            <column name="country_name">Rwanda</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">bl</column>
+            <column name="phone_code" type="INT">590</column>
+            <column name="country_name">Saint Barthélemy</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">ws</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">685</column>
+            <column name="country_name">Samoa</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ita</column>
+            <column name="country_tag">sm</column>
+            <column name="phone_code" type="INT">378</column>
+            <column name="country_name">San Marino</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">por</column>
+            <column name="country_tag">st</column>
+            <column name="phone_code" type="INT">239</column>
+            <column name="country_name">Sao Tome And Principe</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">sa</column>
+            <column name="language_tag">ara</column>
+            <column name="phone_code" type="INT">966</column>
+            <column name="country_name">Saudi Arabia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">sn</column>
+            <column name="phone_code" type="INT">221</column>
+            <column name="country_name">Senegal</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">rs</column>
+            <column name="language_tag">srp</column>
+            <column name="phone_code" type="INT">381</column>
+            <column name="country_name">Serbia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">sc</column>
+            <column name="language_tag">fre</column>
+            <column name="phone_code" type="INT">248</column>
+            <column name="country_name">Seychelles</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">sl</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">232</column>
+            <column name="country_name">Sierra Leone</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">msa</column>
+            <column name="country_tag">sg</column>
+            <column name="phone_code" type="INT">65</column>
+            <column name="country_name">Singapore</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">sk</column>
+            <column name="language_tag">slk</column>
+            <column name="phone_code" type="INT">421</column>
+            <column name="country_name">Slovakia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">si</column>
+            <column name="language_tag">slv</column>
+            <column name="phone_code" type="INT">386</column>
+            <column name="country_name">Slovenia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">sb</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">677</column>
+            <column name="country_name">Solomon Islands</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">so</column>
+            <column name="language_tag">som</column>
+            <column name="phone_code" type="INT">252</column>
+            <column name="country_name">Somalia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">za</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">27</column>
+            <column name="country_name">South Africa</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">kr</column>
+            <column name="language_tag">kor</column>
+            <column name="phone_code" type="INT">82</column>
+            <column name="country_name">Korea</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">es</column>
+            <column name="language_tag">spa</column>
+            <column name="phone_code" type="INT">34</column>
+            <column name="country_name">Spain</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">lk</column>
+            <column name="language_tag">sin</column>
+            <column name="phone_code" type="INT">94</column>
+            <column name="country_name">Sri Lanka</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">sh</column>
+            <column name="phone_code" type="INT">290</column>
+            <column name="country_name">Saint Helena</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">pm</column>
+            <column name="language_tag">fre</column>
+            <column name="phone_code" type="INT">508</column>
+            <column name="country_name">Saint Pierre And Miquelon</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">sd</column>
+            <column name="phone_code" type="INT">249</column>
+            <column name="country_name">Sudan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">nld</column>
+            <column name="country_tag">sr</column>
+            <column name="phone_code" type="INT">597</column>
+            <column name="country_name">Suriname</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">sz</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">268</column>
+            <column name="country_name">Swaziland</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">se</column>
+            <column name="language_tag">swe</column>
+            <column name="phone_code" type="INT">46</column>
+            <column name="country_name">Sweden</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">deu</column>
+            <column name="country_tag">ch</column>
+            <column name="phone_code" type="INT">41</column>
+            <column name="country_name">Switzerland</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">sy</column>
+            <column name="language_tag">ara</column>
+            <column name="phone_code" type="INT">963</column>
+            <column name="country_name">Syrian Arab Republic</column>
+            <column name="country_name">Syria</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">zho</column>
+            <column name="country_tag">tw</column>
+            <column name="phone_code" type="INT">886</column>
+            <column name="country_name">Taiwan</column>
+            <column name="country_name">Taiwan, Province Of China</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">tj</column>
+            <column name="language_tag">uzb</column>
+            <column name="phone_code" type="INT">992</column>
+            <column name="country_name">Tajikistan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">tz</column>
+            <column name="language_tag">swa</column>
+            <column name="phone_code" type="INT">255</column>
+            <column name="country_name">Tanzania</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">th</column>
+            <column name="language_tag">tha</column>
+            <column name="phone_code" type="INT">66</column>
+            <column name="country_name">Thailand</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">tg</column>
+            <column name="language_tag">fre</column>
+            <column name="phone_code" type="INT">228</column>
+            <column name="country_name">Togo</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">tk</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">690</column>
+            <column name="country_name">Tokelau</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">to</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">676</column>
+            <column name="country_name">Tonga</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">tn</column>
+            <column name="phone_code" type="INT">216</column>
+            <column name="country_name">Tunisia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">tr</column>
+            <column name="language_tag">tur</column>
+            <column name="phone_code" type="INT">90</column>
+            <column name="country_name">Turkey</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">tm</column>
+            <column name="language_tag">tuk</column>
+            <column name="phone_code" type="INT">993</column>
+            <column name="country_name">Turkmenistan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">tv</column>
+            <column name="phone_code" type="INT">688</column>
+            <column name="country_name">Tuvalu</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">ae</column>
+            <column name="language_tag">ara</column>
+            <column name="phone_code" type="INT">971</column>
+            <column name="country_name">United Arab Emirate</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">ug</column>
+            <column name="phone_code" type="INT">256</column>
+            <column name="country_name">Uganda</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">eng</column>
+            <column name="country_tag">gb</column>
+            <column name="phone_code" type="INT">44</column>
+            <column name="country_name">United Kingdom</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">ua</column>
+            <column name="language_tag">ukr</column>
+            <column name="phone_code" type="INT">380</column>
+            <column name="country_name">Ukraine</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">uy</column>
+            <column name="language_tag">spa</column>
+            <column name="phone_code" type="INT">598</column>
+            <column name="country_name">Uruguay</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">us</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">1</column>
+            <column name="country_name">United States</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">uzb</column>
+            <column name="country_tag">uz</column>
+            <column name="phone_code" type="INT">998</column>
+            <column name="country_name">Uzbekistan</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">fre</column>
+            <column name="country_tag">vu</column>
+            <column name="phone_code" type="INT">678</column>
+            <column name="country_name">Vanuatu</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">spa</column>
+            <column name="country_tag">ve</column>
+            <column name="phone_code" type="INT">58</column>
+            <column name="country_name">Venezuela</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">vie</column>
+            <column name="country_tag">vn</column>
+            <column name="phone_code" type="INT">84</column>
+            <column name="country_name">Viet Nam</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">wf</column>
+            <column name="language_tag">fre</column>
+            <column name="phone_code" type="INT">681</column>
+            <column name="country_name">Wallis And Futuna</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="language_tag">ara</column>
+            <column name="country_tag">ye</column>
+            <column name="phone_code" type="INT">967</column>
+            <column name="country_name">Yemen</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">zm</column>
+            <column name="language_tag">eng</column>
+            <column name="phone_code" type="INT">260</column>
+            <column name="country_name">Zambia</column>
+        </insert>
+        <insert tableName="countries">
+            <column name="country_tag">zw</column>
+            <column name="language_tag">sna</column>
+            <column name="phone_code" type="INT">263</column>
+            <column name="country_name">Zimbabwe</column>
+        </insert>
+    </changeSet>
+   
+<!--    <changeSet id="04-buzzer-fireBase-uid" author="buZzer Dev Team">
+        <addColumn tableName="users">
+            <column name="instant_token" 
+                defaultValue="null" type="VARCHAR(455)">
+            </column>
+        </addColumn>
+    </changeSet>-->
+    
+    <changeSet id="05-portal-logo" author="s.kosik">
+        <insert tableName="files">
+            <column name="id" value="1"></column>
+            <column name="title" type="VARCHAR(255)">portal logo</column>
+            <column name="type" type="VARCHAR(10)">0</column>
+            <column name="file_name" type="VARCHAR(255)">logo</column>
+            <column name="owner">2</column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="03-buzzer-products" author="s.kosik">
+        <insert tableName="products">
+            <column name="id">1</column>
+            <column name="title">Product 1 - 1 Year</column>
+            <column name="description">You will safe mobile phone battary charge, keep safe even there are no relatives near and sure track locations which allows you get even some statistics.</column>
+            <column name="owner">1</column>
+            <column name="price" type="DOUBLE" valueNumeric="2.85"></column>
+            <column name="currency">USD</column>
+            <column name="expiration_days_amount" type="INT">366</column>
+        </insert>
+        
+        <insert tableName="products">
+            <column name="id">2</column>
+            <column name="title">Product 2 - 6 mounth</column>
+            <column name="description">You will safe mobile phone battary charge, keep safe even there are no relatives near and sure track locations which allows you get even some statistics.</column>
+            <column name="owner">1</column>
+            <column name="price" type="DOUBLE" valueNumeric="1.50"></column>
+            <column name="currency">USD</column>
+            <column name="expiration_days_amount" type="INT">183</column>
+        </insert>
+
+        <insert tableName="products">
+            <column name="id">3</column>
+            <column name="title">Product 3 - FREE 21 DAY</column>
+            <column name="description">You will safe mobile phone battary charge, keep safe even there are no relatives near and sure track locations which allows you get even some statistics.</column>
+            <column name="owner" >1</column>
+            <column name="price" type="DOUBLE" valueNumeric="0"></column>
+            <column name="currency">USD</column>
+            <column name="expiration_days_amount" type="INT">21</column>
+        </insert>
+
+    </changeSet>
+   
+</databaseChangeLog>

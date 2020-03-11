@@ -1,0 +1,32 @@
+/*PAGE NAVIGATOR PANEL ***************************/
+/****************************/
+#navigation {
+    float: left;
+    width: 7%;
+    min-width: 65px;
+    height: 100%;
+    min-height: 100%;
+    background: white;
+    top:0;
+    margin: 0;
+    padding:0;
+}
+.navigationMaximaze {
+    position: fixed !important;
+    margin-right: calc(7% + 8px);
+}
+.lableAsset {
+    margin: 2px;
+}
+.menuBtn {
+    height: 70px;
+    top: 52%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.navBtn{
+    padding-left: 1%;
+}
+.menueImg{}

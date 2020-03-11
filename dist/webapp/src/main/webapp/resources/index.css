@@ -1,0 +1,313 @@
+.landingHeaderTextAssets{
+    height: 40px !important;
+    line-height: 3.7;
+}
+#slide1{
+    /*display: none;*/
+}
+#slide2{
+    display: none;
+}
+#slide3{
+    display: none;
+}
+#slide4{
+    display: none;
+}
+#slide5{
+    display: none;
+}
+.birthDateAsset{
+    padding-right: 10px;
+}
+.label_black1_29 {
+    font-size: 1.29em;
+    color: black;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.registerBtnLabel{
+    padding-top: 10px;
+}
+.registerHoreseshoeICO{
+    float: left;
+    display: inline;
+    padding-top: 7px;
+    padding-left: 17px;
+}
+.infoButtonPosition {
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    bottom: 25%;
+    left: 50%;
+    color: white;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 4em 1em 4em 1em;
+    height: 46px;
+    width: 277px;
+    background-color: #e24302;
+    display: inline-block;
+}
+#registerBtn{
+    font-size: 20px;
+    text-align: center;
+}
+.infoButtonPosition:hover{
+    background-color: #4a8bc3;
+    color: yellow;
+}
+.spliter{
+    height: 1px;
+    color: #e3e3e3;
+    background-color: #e3e3e3;
+    width: 100%;
+    display: inline-block;
+}
+.regLogoAssets{
+    width: 40%;
+    padding-left: 5%;
+    text-align: center;
+}
+.registration{
+    text-align: center;
+}
+.licenseAgreement{
+    width: 100%;
+    float: left;
+    padding-top: 25px;
+}
+.licenseAgreementCheckbox{
+    /*width: 30%;*/
+}
+.licenseAgreementTitle{
+    width: 100%;
+}
+.registerFields {
+    font-size: 19px;
+    margin-left: 10px;
+}
+#registerBornDate{
+    min-width: 120px !important;
+    max-width: 320px !important;
+    width: 320px !important;
+}
+.regLine{
+    width: 73%;
+}
+.registerLabel{
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 22px;
+    max-width: 30%;
+    width: 24%;
+    min-width: 22%;
+    float: left;
+    text-align: right;
+}
+.regAssets{
+/*    width: 40%;
+    min-width: 29%;*/
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 10%;
+    padding-left: 5%;
+    text-align: left;
+}
+.growColor{
+    color: #bed431 !important;
+}
+.devIplColor{
+    color: #e21e25 !important;
+}
+.rhythmColor{
+    color: #5ecae6 !important;
+}
+.foodColor {
+    color: #f6c715 !important;
+}
+.promoteResearchAssets{
+    word-spacing: 6px;
+}
+.promoteAssets{
+    width: 40%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: inline-block;
+    text-align: center;
+}
+#promote{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.bigAchievmentAsset {
+    text-align: center;
+    width: 100%;
+    color: #4c4c4c !important;
+    font-size: 3.2em !important;
+    padding-top: 25px;
+}
+.aboutLogoAssets{
+    display: inline-block;
+    height: 300px;
+    width: 293px;
+    position: relative;
+    top: -45px;
+}
+.aboutUsDescrAssets{
+    max-width: 70%;
+    display: inline-block;
+    margin-top: 5px;
+}
+.aboutUsSubTitleAssets{
+    max-width: 75%;
+    font-size: 1.3em !important;
+    display: inline-block;
+    margin-top: 0px;
+}
+.srvTextAssets{
+    margin: 10px 0 15px;
+    padding-top: 30px;
+    border: 0 none;
+}
+#aboutUs{
+    text-align: center;
+}
+.shadow{
+    background: url("img-res/landing/shadow.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+}
+.srvRoundAssets{
+    margin-left: 3% !important;
+    margin-right: 2% !important;
+    display: inline-block;
+    max-width: 25%;
+    vertical-align: top;
+}
+.aweCenter{
+    line-height: 97px !important;
+}
+#serviceExp{
+    padding-top: 73px;
+    text-align: center;
+}
+.srvRound{
+    background: none repeat scroll 0 0 #bed431;
+    box-shadow: 0 0 0 2px #bed431;
+    height: 99px;
+    width: 99px;
+    transition: all 1000ms ease 0s;
+    border-radius: 50%;
+}
+.srvRoundOpen {
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 97px;
+    overflow: hidden;
+    transition: all 2000ms ease 0s;
+}
+.securityImg{
+    width: 40px;
+    height: 48px;
+}
+.communityImg{
+    width: 57px;
+    height: 50px;
+}
+.forkImg{
+    width: 59px;
+    height: 59px;
+}
+.mobIng{
+    width: 30px;
+    height: 48px;
+}
+.rootsImg {
+    height: 56px;
+    width: 63px;
+}
+#communityBtn{
+    background-color: #60cae8;
+    box-shadow: 7px 0 0 0 #60cae8;
+}
+#foodBtn{
+    background-color: #e21e25;
+    box-shadow: 5px 0 0 0 #e21e25;
+}
+#mobileBtn{
+    background-color: #bed431;
+    box-shadow: 5px 0 0 0 #bed431;
+}
+#securityBtn{
+    background-color: #7251a2;
+    box-shadow: 5px 0 0 0 #7251a2;
+}
+#rootsBtn{
+    background-color: #f6c815;
+    box-shadow: 5px 0 0 0 #f6c815;
+}
+.shortBtn {
+    width: 17%;
+    height: 85px;
+    display: inline-block;
+    margin-right: 0px;
+    padding-right: 0px;
+    position: relative;
+    cursor: pointer;
+}
+.promoteTextsAssets{
+    line-height: 25px !important;
+}
+.shortHeadings{
+    height: 53px;
+    margin-top: -2px;
+    width: 100%;
+    background-color: #f8ecf2;
+    top: 0px;
+    text-align: center;
+}
+.landingBtnIcoAsset{
+    height: 42px;
+}
+.bigHeadAsset{
+    text-align: center;
+    width: 100%;
+}
+.landingHeaderAsset{
+    padding-top: 21px;
+}
+#centerContent{
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 61px;
+}
+.slide1Root{
+    background-image: url("/resources/img-res/landing/4red_0001.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.slide5Root{
+    background-image: url("/resources/img-res/landing/4red_0005.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.landingSlide1{
+    width: 100%;
+    position: absolute;
+    display: inherit;
+    z-index: -1;
+}
+
+.landingMenu:active{
+    color: #60cae8;    
+}
+hr{
+    border: 1px solid #393939;
+}
+a {text-decoration: none}

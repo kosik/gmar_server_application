@@ -1,0 +1,118 @@
+#socialButtons{
+    margin-top: 10px;
+}
+#messageStream{
+    height: 75px;
+    overflow-y: scroll;
+    width: 80%;
+    float: right;
+}
+.messageItem{
+    bottom: 0px;
+    /*width: 160px;*/
+    /*display: inline;*/
+    /*position: unset;*/
+}
+.messageOwner{
+    color: #f0edea;
+    display: inline;
+}
+.messageContent{
+    display: inline-block;
+}
+.field{
+    float: right;
+    width: 80%;
+}
+.label{
+    float: left;
+}
+.threadsRoot {
+    display: none;
+    /*max-width: 490px;*/
+}
+.userItemTextPos{
+    float: left;
+    height: 30px;
+    margin-left: 30px;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.threadItemTextPos{
+    float: left;
+    height: 32px;
+    margin-left: 35px;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.itemIco{
+    float: left;
+    position: relative;
+}
+.userItem:hover{
+    background-color: greenyellow;
+}
+.userItem{
+    cursor: pointer;
+    min-width: 100%;
+    max-width: 100%;
+    height: 30px;
+    float: right;
+    /*overflow: hidden;*/
+}
+.threadItem:hover{
+    background-color: greenyellow;
+}
+.threadItem{
+    cursor: pointer;
+    min-width: 98%;
+    max-width: 100%;
+    height: 30px;
+    float: right;
+}
+#emptyThreadList{
+    border-bottom: 3px double #00829a;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+#userList{
+    position: relative;
+    float: right;
+}
+#userListWrapper{
+    position: fixed;
+    float: left;
+    width: 11%;
+}
+#addFriendEmailBtn{
+    position: relative;
+    float: right;
+    max-width: 30%;
+    cursor: pointer;
+}
+#friendEmail{
+    max-width: 80%;
+    position: relative;
+    float: right;
+}
+.emptyFriendList{
+    height: 100%;
+    border-left: 1px solid #d9e0e7;
+    box-shadow: -1px 0 0 0 #f2f2f2;
+    position: fixed;
+}
+#inviteFacebookFriends{
+    padding-right: 1px;
+    float: right;
+    cursor: pointer;
+}
+#inviteGoogleFriends{
+    padding-right: 1px;
+    float: right;
+    cursor: pointer;
+}

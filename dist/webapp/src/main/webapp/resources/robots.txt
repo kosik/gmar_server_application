@@ -1,0 +1,40 @@
+Host: https://multitracking.info
+User-agent: Yandex
+Disallow: /secure/
+Disallow: /resources/
+Disallow: /login
+Disallow: /register
+Allow: /content/flow/
+Allow: /content/
+
+User-agent: Googlebot
+Disallow: /secure/
+Disallow: /resources/
+Disallow: /login
+Disallow: /register
+Allow: /content/flow/
+Allow: /content/
+
+User-agent: Slurp
+Disallow: /secure/
+Disallow: /resources/
+Disallow: /login
+Disallow: /register
+Allow: /content/flow/
+Allow: /content/
+
+User-agent: Twitterbot
+Disallow: /secure/
+Disallow: /resources/
+Disallow: /login
+Disallow: /register
+Allow: /content/flow/
+Allow: /content/
+
+User-agent: *
+Disallow: /secure/
+Disallow: /resources/
+Disallow: /login
+Disallow: /register
+Allow: /content/flow/
+Allow: /content/

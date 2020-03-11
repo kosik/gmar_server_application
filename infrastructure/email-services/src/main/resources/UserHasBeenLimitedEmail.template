@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+  <head>
+    <title>User limited</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+    <p>Hello,</p>
+    <p>
+    This is an automatic system e-mail to inform you that the following user's access to oDrive has been
+    limited by the system:
+    </p>
+    <ul>
+        <li>Username: <b><span th:text="${username}">username</span></b></li>
+        <li>Current role: <b><span th:text="${currentRole}">current role</span></b></li>
+        <li>Current state: <b><span th:text="${currentState}">current state</span></b></li>
+        <li>Current subscription status: <b><span th:text="${currentSubscriptionStatus}">current subscription status</span></b></li>
+        <li>Expiration date: <b><span th:text="${expirationDate}">expiration date</span></b></li>
+    </ul>
+    <p>
+    The user should have been limited by a subscription.closed webhook event from FastBill. Since this event either
+    wasn't sent, or was processed incorrectly, the system automatically limits users whose subscription expiration date
+    is in the past and are not already with role "limited user".
+    </p>
+    <p>
+    You should review the system logs, oDrive database and diagnose the problem with FastBill.
+    </p>
+    <p>oDrive webapp</p>
+  </body>
+
+</html>

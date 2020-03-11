@@ -1,0 +1,393 @@
+
+.birthDateAsset{
+    /*padding-right: 10px;*/
+}
+.label_black1_29 {
+    font-size: 1.29em;
+    color: black;
+    font-weight: normal;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.registerBtnLabel{
+    padding-top: 2px;
+}
+.registerHoreseshoeICO{
+    float: left;
+    display: inline;
+    padding-top: 3px;
+    padding-left: 17px;
+    width: 19px;
+    height: 23px;
+}
+.infoButtonPosition {
+    cursor: pointer;
+    text-align: center;
+    bottom: 25%;
+    left: 50%;
+    color: white;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 4em 1em 4em 1em;
+    width:220px;
+    background-color: #e24302;
+    display: inline-block;
+}
+#registerBtn{
+    /*font-size: 20px;*/
+    text-align: center;
+}
+.infoButtonPosition:hover{
+    background-color: #4a8bc3;
+    color: yellow;
+}
+
+.footerTextAssets{
+    line-height: 0px !important;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+.footerTop{
+    padding-bottom: 3px;
+}
+.footerImgAssets{
+    margin-top: 0px;
+}
+.inline-block{
+    display:inline-block;
+}
+.footerEl{
+
+}
+#footer{
+    padding-top: 65px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.spliter{
+    height: 1px;
+    color: #e3e3e3;
+    background-color: #e3e3e3;
+    width: 100%;
+    display: inline-block;
+}
+.regLogoAssets{
+    width: 40%;
+    padding-left: 5%;
+    text-align: center;
+}
+.registration{
+    text-align: center;
+}
+.licenseAgreement{
+    width: 100%;
+    float: left;
+    padding-top: 25px;
+}
+.licenseAgreementCheckbox{
+    /*width: 30%;*/
+}
+.licenseAgreementTitle{
+    width: 100%;
+}
+.registerFields {
+    /*float:left;*/
+}
+#registerBornDate{
+/*    min-width: 270px !important;
+    max-width: 270px !important;
+    width: 270px !important;*/
+}
+.registerLabel{
+    width: 29%;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;    
+}
+.regAssets{
+    width: 40%;
+    padding-right: 10%;
+    padding-left: 5%;
+    text-align: center;
+    float: right;
+}
+.growColor{
+    color: #bed431 !important;
+}
+.devIplColor{
+    color: #e21e25 !important;
+}
+.rhythmColor{
+    color: #5ecae6 !important;
+}
+.foodColor {
+    color: #f6c715 !important;
+}
+.promoteResearchAssets{
+    word-spacing: 6px;
+}
+.promoteAssets{
+    width: 40%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: inline-block;
+    text-align: center;
+}
+#promote{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.bigAchievmentAsset {
+    text-align: center;
+    width: 100%;
+    color: #4c4c4c !important;
+    font-size: 3.2em !important;
+    padding-top: 25px;
+}
+.aboutLogoAssets{
+    display: inline-block;
+    height: 220px;
+    width: 215px;
+    position: relative;
+    top: -45px;
+}
+.aboutUsDescrAssets {
+    max-width: 70%;
+    display: inline-block;
+    margin-top: 5px;
+}
+.footerImgAssets{
+    margin-top: 5px;
+}
+.aboutUsSubTitleAssets{
+    max-width: 75%;
+    font-size: 1.35em;
+}
+.srvTextAssets{
+    margin: 10px 0 15px;
+    padding-top: 30px;
+    border: 0 none;
+}
+.shadow{
+    background: url("img-res/landing/shadow.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+}
+.srvRoundAssets{
+    margin-left: 3% !important;
+    margin-right: 2% !important;
+    display: inline-block;
+    max-width: 25%;
+    vertical-align: top;
+}
+#serviceExp{
+    padding-top: 35px;
+    text-align: center;
+}
+.srvRound{
+    background: none repeat scroll 0 0 #bed431;
+    box-shadow: 0 0 0 2px #bed431;
+    height: 85px;
+    width: 85px;
+    transition: all 1000ms ease 0s;
+    border-radius: 50%;
+}
+.srvRoundOpen {
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 35px;
+    line-height: 85px;
+    overflow: hidden;
+    transition: all 2000ms ease 0s;
+}
+.securityImg{
+    width: 40px;
+    height: 48px;
+}
+.communityImg{
+    width: 57px;
+    height: 50px;
+}
+.forkImg{
+    width: 59px;
+    height: 59px;
+}
+.mobIng{
+    width: 30px;
+    height: 48px;
+}
+.rootsImg {
+    height: 43px;
+    width: 48px;
+}
+
+#communityBtn{
+    background-color: #60cae8;
+    box-shadow: 7px 0 0 0 #60cae8;
+}
+#foodBtn{
+    background-color: #e21e25;
+    box-shadow: 5px 0 0 0 #e21e25;
+}
+#mobileBtn{
+    background-color: #bed431;
+    box-shadow: 5px 0 0 0 #bed431;
+}
+#securityBtn{
+    background-color: #7251a2;
+    box-shadow: 5px 0 0 0 #7251a2;
+}
+#rootsBtn{
+    background-color: #f6c815;
+    box-shadow: 5px 0 0 0 #f6c815;
+}
+.shortBtn{
+    width: 17%;
+    height: 90px;
+    display: inline-block;
+    margin-right: 0px;
+    padding-right: 0px;
+    position: relative;
+    cursor: pointer;
+}
+.landingH2{
+    color: #393939;
+    font-size: 1.3em;
+    margin-top: 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.landingH1{
+    border: 0 none;
+    color: black;
+    font-size: 2.9em;
+    margin-bottom: 0;
+    text-shadow: 7px 6px 5px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+.landingHeaderAsset{
+    padding-top: 55px;
+}
+.landingHeaderText{
+    color: #4c4c4c;
+    font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+    font-size: 0.91em;
+    text-transform: uppercase;
+}
+.landingH3{
+    border: 0 none;
+    color: #393939;
+    font-size: 1.21em;
+    margin: 10px 0 15px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+}
+.landingH4 {
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+    /*line-height: 24px;*/
+}
+
+/*FONTS  *********************************************/
+.aboutUsText{
+    color: #e21e25;
+    border: 0 none;
+    font-family: Verdana,Arial,Helvetica,Geneva;
+    font-size: 2.1em;
+    margin-bottom: 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+}
+.shortHeadings{
+    height: 90px;
+    /*margin-top: 98px;*/
+    width: 100%;
+    background-color: #f8ecf2;
+    /* position: relative; */
+    top: 0px;
+    text-align: center;
+}
+.landingMenu:active{
+    color: #60cae8;    
+}
+a {text-decoration: none}
+body{
+    width: 100%;
+    min-width: 675px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0.75em !important;
+}
+
+
+/*NOT CHANGED START ***********************************************************/
+.aweCenter{
+    line-height: 97px !important;
+}
+#loginPopupBtn{
+    cursor: pointer;
+}
+
+#communityBtn{
+    background-color: #7251a2;
+    box-shadow: 5px 0 0 0 #7251a2;
+}
+#foodBtn{
+    background-color: #e21e25;
+    box-shadow: 5px 0 0 0 #e21e25;
+}
+#mobileBtn{
+    background-color: #bed431;
+    box-shadow: 5px 0 0 0 #bed431;
+}
+#securityBtn{
+    background-color: #f6c815;
+    box-shadow: 5px 0 0 0 #f6c815;
+}
+#rootsBtn{
+    background-color: #60cae8;
+    box-shadow: 7px 0 0 0 #60cae8;
+}
+.bigHeadAsset{
+    text-align: center;
+    width: 100%;
+}
+#centerContent{
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 61px;
+}
+.slide1Root{
+    /*position: relative;*/
+    background-image: url("/resources/img-res/landing/landingSlide1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.landingSlide1{
+    width: 100%;
+    position: absolute;
+    display: inherit;
+    z-index: -1;
+}
+#home{
+    box-shadow: 0 -4px 0 0 #60cae8;
+}
+#sport{
+    box-shadow: 0 -4px 0 0 #bed431;
+}
+#logistic{
+    box-shadow: 0 -4px 0 0 #e21e25;
+}
+#food{
+    box-shadow: 0 -4px 0 0 #f6c815;
+}
+#secure{
+    box-shadow: 0 -4px 0 0 #c6c6c6;
+}
+#registration{
+    box-shadow: 0 -4px 0 0 #7251a2;
+}
+/*NOT CHANGED END *************************************************************/

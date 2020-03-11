@@ -1,0 +1,62 @@
+/* 
+    Created on : Oct 2, 2015, 5:11:58 PM
+    Author     : oDrive Team
+*/
+#geotag{
+    margin-top: 2%;
+    font: 0.95em sans-serif;
+    width: 100%;
+    /*z-index: 200;*/
+}
+
+ul {
+  text-align: left;
+  display: inline;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+    /*z-index: 200;*/  
+}
+ul li {
+    font: 12px/18px sans-serif;
+  display: inline-block;
+  /*margin-right: -4px;*/
+  position: relative;
+  /*padding: 5px;*/
+  cursor: pointer;
+  transition: all 0s;
+}
+ul li:hover {
+/*  background: #4F4F4F;
+  color: #fff;*/
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  background: #4F4F4F;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { 
+    background: #666; 
+}
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}

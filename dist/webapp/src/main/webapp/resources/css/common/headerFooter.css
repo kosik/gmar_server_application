@@ -1,0 +1,192 @@
+/********************************************************************** FOOTER*/
+.footerTextAssets{
+    line-height: 0px !important;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+.footerTop{
+    padding-bottom: 3px;
+}
+.footerImgAssets{
+    margin-top: 0px;
+}
+#footerContent{
+    padding-top: 65px;
+    text-align: center;
+    padding-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+/****************************************************************** FOOTER END*/
+#coverRadioPeriods{
+    margin-right: 25px;
+    margin-top: 5px;
+}
+/******************************************************************USER AVATAR*/
+#smallUserLogoIMG{
+    display: none;
+    padding-right: 10px;
+    margin-top: 13px;
+}
+#smallUserName {
+    line-height: 60px;
+    vertical-align: middle;
+    display: inline-flex;
+    padding-right: 10px;
+}
+.rightHeaderElements{
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+/**************************************************************END USER AVATAR*/
+.radioStartDateAssets{
+}
+#addNoteBtn:hover {
+    color: white;
+}
+#addNoteBtn{
+    display: none;
+    background-color: #dcdcdf;
+    /*    width: 4%;
+        height: 1%;*/
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    text-align: center;
+    color: #888b90;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+/*HEADER */
+#home{
+    box-shadow: 0 -4px 0 0 #60cae8;
+}
+#sport{
+    box-shadow: 0 -4px 0 0 #bed431;
+}
+#logistic{
+    box-shadow: 0 -4px 0 0 #e21e25;
+}
+#food{
+    box-shadow: 0 -4px 0 0 #f6c815;
+}
+#secure{
+    box-shadow: 0 -4px 0 0 #c6c6c6;
+}
+#registration{
+    box-shadow: 0 -4px 0 0 #7251a2;
+}
+.landingHeaderTextAssets:active{
+    color: #60cae8;
+}
+.landingHeaderTextAssets{
+    padding-left: 22px;
+    padding-right: 15px;
+    min-width: 50px;
+    /*height: 0px;*/
+    margin-top: 1.5%;
+    display: table-cell;
+    cursor: pointer;
+}
+.communityHeaderTextAssets{
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width: 75px;
+    height: 4px;
+    vertical-align: top;
+    display: table-cell;
+    cursor: pointer;
+}
+
+#signInHeader {
+    min-width: 100%;
+    background: white;
+    border-top: 4px solid #4f4f4f;
+    max-height: 9%;
+    min-height: 61px;
+    position: fixed;
+    top:0px;
+    z-index: 300;
+}
+
+.logoTitleAssets{
+    height: 50px;
+    padding-top:4px;
+    padding-left: 7px;
+    vertical-align: top;
+}
+.landingMenuAssets{
+    padding-right: 5%;
+    display: inline-block;
+    position: absolute;
+    right: 13%;
+}
+.landingHeaderText {
+    color: #4c4c4c;
+    font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+/*HEADER END************/
+
+/*LOGIN POPUP*/
+#loginPopupContent{
+    display: none;
+    min-width: 275px;
+    max-width: 275px;
+}
+#googleLoginRegSmall{
+    display: inline-block;
+    padding-right: 3px;
+    cursor: pointer;
+    position: relative;
+}
+#facebookLoginRegSmall{
+    float: left;
+    display: inline-block;
+    padding-right: 3px;
+    cursor: pointer;
+    position: relative;
+}
+#loginPopupBtn{
+    cursor: pointer;
+}
+.landingLoginImgAssets{
+    vertical-align: top;
+}
+.landingSocialBtnLabelAsset{
+    top:-50%;
+    position: absolute;
+    padding-left: 7px;
+}
+.loginPopupSocialAssets{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.popupHalfAssets{
+    width:48%;
+}
+.loginPassAssets{
+    margin-bottom: 25px;
+}
+#loginPass{
+    border: 1px solid #1bbc9b;
+    font-size: 1.2em;
+    background: white url(../../img-res/ico/indexUserPass.png) right no-repeat;
+    margin-bottom: 7px;
+}
+#loginUserMail{
+    border: 1px solid #1bbc9b;
+    font-size: 1.2em;
+    background: white url(../../img-res/ico/indexUserIco.png) right no-repeat;
+    box-sizing: border-box;
+    margin-right: 5px;
+    padding-right: 20px;
+}
+/*LOGIN POPUP END**********************/
